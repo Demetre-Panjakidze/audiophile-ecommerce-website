@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css and js -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <script src="./hamburgerMenu.js" defer></script>
+    <script src="./preventSomeCharacters.js" defer></script>
+    <!-- title -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Audiophile e-commerce website</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-div">
+        <div class="header-left-part">
+          <a
+            href="javascript:void(0);"
+            onclick="myFunction()"
+            class="hamburger-menu"
+          >
+            <button>
+              <img src="./assets/shared/tablet/icon-hamburger.svg" alt="" />
+            </button>
+          </a>
+          <a href="./index.html"
+            ><img src="./assets/shared/desktop/logo.svg" alt=""
+          /></a>
+        </div>
+        <div class="header-links">
+          <a href="./index.html" class="link-home">Home</a>
+          <a href="./headphones.html" class="link-headphones">headphones</a>
+          <a href="./speakers.html" class="link-speakers">speakers</a>
+          <a href="./earphones.html" class="link-earphones">earphones</a>
+        </div>
+        <div class="header-right-part">
+          <a href="#">
+            <button>
+              <img src="./assets/shared/desktop/icon-cart.svg" alt="" />
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="hidden-div" id="hidden-div">
+        <div class="div div-1">
+          <div class="img-div img-div-1">
+            <img
+              src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
+              alt=""
+              class="accessory-img"
+            />
+          </div>
+          <p>headphones</p>
+          <a href="./headphones.html">
+            <p>shop</p>
+            <img src="./assets/shared/desktop/icon-arrow-right.svg" alt="" />
+          </a>
+        </div>
+        <div class="div div-2">
+          <div class="img-div img-div-2">
+            <img
+              src="./assets/shared/desktop/image-category-thumbnail-speakers.png"
+              alt=""
+              class="accessory-img"
+            />
+          </div>
+          <p>speakers</p>
+          <a href="./speakers.html">
+            <p>shop</p>
+            <img src="./assets/shared/desktop/icon-arrow-right.svg" alt="" />
+          </a>
+        </div>
+        <div class="div div-3">
+          <div class="img-div img-div-3">
+            <img
+              src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
+              alt=""
+              class="accessory-img"
+            />
+          </div>
+          <p>earphones</p>
+          <a href="./earphones.html">
+            <p>shop</p>
+            <img src="./assets/shared/desktop/icon-arrow-right.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <a href="javascript:history.back()">Go Back</a>
+      <form action="">
+        <div class="form-top">
+          <h1>checkout</h1>
+          <div class="billing-details details">
+            <h3>Billing details</h3>
+            <div class="input-field-1 input-field">
+              <div class="input-1 input">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Alexei Ward"
+                />
+              </div>
+              <div class="input-2 input">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="alexei@mail.com"
+                />
+              </div>
+              <div class="input-3 input">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+1 202-555-0136"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="shipping-info details">
+            <h3>shipping info</h3>
+            <div class="input-field-2 input-field">
+              <div class="input-4 input">
+                <label for="address">Your Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="1137 Williams Avenue"
+                />
+              </div>
+              <div class="input-5 input">
+                <label for="zip">ZIP Code</label>
+                <input type="number" id="zip" name="zip" placeholder="10001" />
+              </div>
+              <div class="input-6 input">
+                <label for="city">City</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="New York"
+                />
+              </div>
+              <div class="input-7 input">
+                <label for="country">Country</label>
+                <input
+                  type="text"
+                  id="country"
+                  name="country"
+                  placeholder="United States"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="payment-details details">
+            <h3>payment details</h3>
+            <div class="payment">
+              <p>Payment Method</p>
+              <div class="label-div">
+                <input type="radio" name="payment" id="input1" class="form__radio-input" />e-Money
+                <label for="small" class="form__radio-label"><span class="form__radio-button"></span>Small tour group</label>
+
+                <input type="radio" name="payment" id="input2" />Cash on Delivery
+                <label id="label2" class="label label2">
+              </div>
+            </div>
+          </div>
+          <div class="card-info details">
+            <div class="input-field-3 input-field">
+              <div class="input-8 input">
+                <label for="eMoneyNum">e-Money Number</label>
+                <input type="number" id="eMoneyNum" name="eMoneyNum" placeholder="238521993" />
+              </div>
+              <div class="input-9 input">
+                <label for="eMoneyPIN">e-Money PIN</label>
+                <input type="number" id="eMoneyPIN" name="eMoneyPIN" placeholder="6891" />
+              </div>
+            </div>
+          </div>
+          <div class="information">
+            <img src="./assets/checkout/icon-cash-on-delivery.svg" alt="">
+            <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
+          </div>
+        </div>
+        <div class="form-bottom">
+          <h2>summary</h2>
+          <div class="product-list"></div>
+          <div class="pay-amount">
+            <div class="pay-1 pay">
+              <p class="name-of-pay">TOTAL</p>
+              <p class="pay-amount">$ 0</p>
+            </div>
+            <div class="pay-2 pay">
+              <p class="name-of-pay">SHIPPING</p>
+              <p class="pay-amount">$ 0</p>
+            </div>
+            <div class="pay-3 pay">
+              <p class="name-of-pay">VAT (INCLUDED)</p>
+              <p class="pay-amount">$ 0</p>
+            </div>
+            <div class="pay-4 pay">
+              <p class="name-of-pay">GRAND TOTAL</p>
+              <p class="pay-amount">$ 0</p>              
+            </div>
+          </div>
+          <button type="submit">CONTINUE & PAY</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

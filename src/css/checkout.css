@@ -1,0 +1,376 @@
+body {
+  font-family: "Manrope", sans-serif;
+}
+body header .header-div {
+  background-color: #101010;
+  border-bottom: 1px solid #fff;
+  padding: 32px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+body header .header-div .header-left-part {
+  display: flex;
+  gap: 60px;
+}
+body header .header-div .header-left-part a button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+body header .header-div .header-links {
+  display: none;
+}
+body header .header-div .header-links:hover .link-home,
+body header .header-div .header-links:hover .link-headphones,
+body header .header-div .header-links:hover .link-speakers,
+body header .header-div .header-links:hover .link-earphones {
+  color: #d87d4a;
+}
+body header .header-div .header-right-part a button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  body header .header-div {
+    padding: 37px 40px 32px;
+  }
+}
+@media (min-width: 1000px) {
+  body header .header-div .header-left-part .hamburger-menu {
+    display: none;
+  }
+  body header .header-div .header-links {
+    display: flex;
+    gap: 34px;
+  }
+  body header .header-div .header-links a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 1440px) {
+  body header .header-div {
+    padding: 32px 165px 36px;
+  }
+}
+body header .hidden-div {
+  padding: 84px 24px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 68px;
+  display: none;
+}
+body header .hidden-div .div {
+  width: 100%;
+  height: 165px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header .hidden-div .div .img-div {
+  width: 138px;
+  height: 88px;
+}
+body header .hidden-div .div .img-div .accessory-img {
+  position: relative;
+  top: -40px;
+}
+body header .hidden-div .div .img-div-3 {
+  width: 165px;
+}
+body header .hidden-div .div p {
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 20px;
+  letter-spacing: 1.0714285374px;
+  text-transform: uppercase;
+}
+body header .hidden-div .div a {
+  margin: 17px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 13.32px;
+  text-decoration: none;
+}
+body header .hidden-div .div a p {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+body header .hidden-div .div a img {
+  width: 9px;
+  height: 14px;
+}
+@media (min-width: 550px) {
+  body header .hidden-div {
+    padding: 108px 40px 67px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  body header .hidden-div .div {
+    max-width: 350px;
+  }
+}
+body main {
+  background-color: #fafafa;
+}
+body main a {
+  display: block;
+  padding: 16px 0 0 24px;
+  text-decoration: none;
+  color: #000;
+}
+@media (min-width: 768px) {
+  body main a {
+    padding: 39px 0 0 48px;
+  }
+}
+@media (min-width: 1440px) {
+  body main a {
+    padding: 79px 0 0 165px;
+  }
+}
+body main form {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 24px 24px 0;
+}
+body main form .form-top {
+  background-color: #fff;
+  padding: 24px 24px 32px;
+  border-radius: 8px;
+}
+body main form .form-top h1 {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 1px;
+}
+body main form .form-top .details {
+  margin: 32px 0 0;
+}
+body main form .form-top .details h3 {
+  text-transform: uppercase;
+  color: #d87d4a;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.928571403px;
+}
+body main form .form-top .details .payment {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+body main form .form-top .details .payment p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.2142857164px;
+  margin: 16px 0 0;
+}
+body main form .form-top .details .payment .label-div .label {
+  display: flex;
+  gap: 16px;
+  padding: 18px 0 18px 16px;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -0.25px;
+  cursor: pointer;
+}
+body main form .form-top .details .payment .label-div .label2 {
+  margin: 17px 0 0;
+}
+body main form .form-top .details .input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 16px 0 0;
+}
+body main form .form-top .details .input-field .input {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+body main form .form-top .details .input-field .input label {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.2142857164px;
+}
+body main form .form-top .details .input-field .input input {
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  padding: 18px 0 19px 24px;
+}
+body main form .form-top .details .input-field .input-5 input::-webkit-outer-spin-button,
+body main form .form-top .details .input-field .input-5 input::-webkit-inner-spin-button,
+body main form .form-top .details .input-field .input-8 input::-webkit-outer-spin-button,
+body main form .form-top .details .input-field .input-8 input::-webkit-inner-spin-button,
+body main form .form-top .details .input-field .input-9 input::-webkit-outer-spin-button,
+body main form .form-top .details .input-field .input-9 input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body main form .form-top .details .input-field .input-5 input[type=number],
+body main form .form-top .details .input-field .input-8 input[type=number],
+body main form .form-top .details .input-field .input-9 input[type=number] {
+  -moz-appearance: textfield;
+}
+body main form .form-top .card-info {
+  display: none;
+}
+body main form .form-top .information {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 30px 0 0;
+  display: none;
+}
+body main form .form-top .information img {
+  width: 48px;
+  height: 48px;
+}
+body main form .form-top .information p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  max-width: 554px;
+}
+body main form .form-bottom {
+  background-color: #fff;
+  padding: 32px 24px;
+  border-radius: 8px;
+}
+body main form .form-bottom h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1.2857142687px;
+}
+body main form .form-bottom .product-list {
+  margin: 31px 0 0;
+}
+body main form .form-bottom .pay-amount .pay {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0 0;
+}
+body main form .form-bottom .pay-amount .pay .name-of-pay {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+body main form .form-bottom .pay-amount .pay .pay-amount {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+body main form .form-bottom .pay-amount .pay-2,
+body main form .form-bottom .pay-amount .pay-3 {
+  margin: 8px 0 0;
+}
+body main form .form-bottom .pay-amount .pay-4 {
+  margin: 24px 0 0;
+}
+body main form .form-bottom .pay-amount .pay-4 .pay-amount {
+  color: #d87d4a;
+}
+body main form .form-bottom button {
+  margin: 32px 0 0;
+  cursor: pointer;
+  border: none;
+  height: 48px;
+  width: 100%;
+  background-color: #d87d4a;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+@media (min-width: 768px) {
+  body main form {
+    margin-inline: 40px;
+  }
+  body main form .form-top {
+    padding: 30px 28px;
+  }
+  body main form .form-top h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.1428571939px;
+  }
+  body main form .form-top .billing-details {
+    margin: 41px 0 0;
+  }
+  body main form .form-top .billing-details .input-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body main form .form-top .shipping-info {
+    margin: 53px 0 0;
+  }
+  body main form .form-top .shipping-info .input-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body main form .form-top .shipping-info .input-field .input-4 {
+    grid-column: 1/3;
+  }
+  body main form .form-top .payment-details {
+    margin: 61px 0 0;
+  }
+  body main form .form-top .payment-details .payment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body main form .form-top .card-info,
+body main form .form-top .information {
+    margin: 24px 0 0;
+  }
+  body main form .form-top .card-info .input-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body main form .form-bottom {
+    padding: 33px;
+  }
+}
+@media (min-width: 1100px) {
+  body main form {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+  }
+}
+@media (min-width: 1440px) {
+  body main form {
+    margin: 0;
+    padding: 38px 165px 0;
+  }
+}/*# sourceMappingURL=checkout.css.map */
