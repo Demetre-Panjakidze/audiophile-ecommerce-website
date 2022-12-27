@@ -20,10 +20,10 @@ body header .header-div .header-left-part a button {
 body header .header-div .header-links {
   display: none;
 }
-body header .header-div .header-links:hover .link-home,
-body header .header-div .header-links:hover .link-headphones,
-body header .header-div .header-links:hover .link-speakers,
-body header .header-div .header-links:hover .link-earphones {
+body header .header-div .header-links .link-home:hover,
+body header .header-div .header-links .link-headphones:hover,
+body header .header-div .header-links .link-speakers:hover,
+body header .header-div .header-links .link-earphones:hover {
   color: #d87d4a;
 }
 body header .header-div .header-right-part a button {
@@ -127,6 +127,92 @@ body header .hidden-div .div a img {
 }
 body main {
   background-color: #fafafa;
+}
+body main .products {
+  position: absolute;
+  padding: 31px 28px;
+  left: 24px;
+  right: 24px;
+  top: 114px;
+  max-width: 100%;
+  border-radius: 8px;
+  background-color: gray;
+  display: none;
+}
+body main .products .number-of-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .products .number-of-products h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1.2857142687px;
+}
+body main .products .number-of-products p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+body main .products .number-of-products p:hover {
+  color: #d87d4a;
+}
+body main .products .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 0 0;
+}
+body main .products .total p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+body main .products .total .price {
+  font-size: 18px;
+  font-weight: 700;
+}
+body main .products a {
+  margin: 24px 0 0;
+  padding: 0;
+}
+body main .products a button {
+  width: 100%;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  background-color: #d87d4a;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+body main .products a button:hover {
+  background-color: #fbaf85;
+}
+@media (min-width: 425px) {
+  body main .products {
+    width: 377px;
+  }
+}
+@media (min-width: 768px) {
+  body main .products {
+    top: 119px;
+    left: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  body main .products {
+    left: 165px;
+  }
 }
 body main a {
   display: block;

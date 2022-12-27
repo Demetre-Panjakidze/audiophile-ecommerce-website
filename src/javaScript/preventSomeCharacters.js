@@ -37,3 +37,10 @@ input2.addEventListener("click", () => {
   card_info_div.style.display = "none";
   card_info.style.display = "flex";
 });
+
+if(input2.checked) {
+  label1.style.border = "1px solid #CFCFCF";
+  label2.style.border = "1px solid #d87d4a";
+  card_info_div.style.display = "none";
+  card_info.style.display = "flex";
+}

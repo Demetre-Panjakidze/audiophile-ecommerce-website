@@ -8,7 +8,9 @@
     <!-- css and js -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/product.css" />
-    <script src="./hamburgerMenu.js" defer></script>
+    <script src="./javaScript/hamburgerMenu.js" defer></script>
+    <script src="./javaScript/transaction.js" defer></script>
+    <script src="./javaScript/cart.js" defer></script>
     <!-- title -->
     <link
       rel="icon"
@@ -48,7 +50,7 @@
         </div>
         <div class="header-right-part">
           <a href="#">
-            <button>
+            <button id="cart">
               <img src="./assets/shared/desktop/icon-cart.svg" alt="" />
             </button>
           </a>
@@ -101,6 +103,18 @@
     </header>
     <main>
       <a href="javascript:history.back()">Go Back</a>
+      <div class="products">
+        <div class="number-of-products">
+          <h2>cart (0)</h2>
+          <p id="remove-all">Remove all</button>
+        </div>
+        <div class="item-list"></div>
+        <div class="total">
+          <p>Total</p>
+          <p class="price">$ 0</p>
+        </div>
+        <a href="./checkout.html"><button class="checkout">checkout</button></a>
+      </div>
       <div class="section section-1">
         <div class="product-img">
           <picture>
@@ -127,14 +141,14 @@
             Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.
           </p>
           <div class="pricing">
-            <p class="price">$ 3,500</p>
+            <p class="price zx7-speaker-price">$ 3,500</p>
             <div class="amount">
               <div class="increase-decrease">
-                <button>-</button>
-                <p>1</p>
-                <button>+</button>
+                <button id="minus">-</button>
+                <p id="amount" class="zx7-speaker-amount">1</p>
+                <button id="plus">+</button>
               </div>
-              <a href="#"><button>add to cart</button></a>
+              <a href="#"><button id="cart-add" class="zx7-speaker">add to cart</button></a>
             </div>
           </div>
         </div>

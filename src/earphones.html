@@ -8,7 +8,8 @@
     <!-- css and js -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/gadget.css" />
-    <script src="./hamburgerMenu.js" defer></script>
+    <script src="./javaScript/hamburgerMenu.js" defer></script>
+    <script src="./javaScript/cart.js" defer></script>
     <!-- title -->
     <link
       rel="icon"
@@ -48,7 +49,7 @@
         </div>
         <div class="header-right-part">
           <a href="#">
-            <button>
+            <button id="cart">
               <img src="./assets/shared/desktop/icon-cart.svg" alt="" />
             </button>
           </a>
@@ -100,6 +101,18 @@
       </div>
     </header>
     <main>
+      <div class="products">
+        <div class="number-of-products">
+          <h2>cart (0)</h2>
+          <p id="remove-all">Remove all</button>
+        </div>
+        <div class="item-list"></div>
+        <div class="total">
+          <p>Total</p>
+          <p class="price">$ 0</p>
+        </div>
+        <a href="./checkout.html"><button class="checkout">checkout</button></a>
+      </div>
       <div class="section section-1">
         <h1>earphones</h1>
       </div>
