@@ -6,12 +6,13 @@ const checkout_btn = document.getElementsByClassName("checkout")[0];
 cart_icon.addEventListener("click", () => {
   if (product_list.style.display === "block") {
     product_list.style.display = "none";
-    // document.body.style.overflow = "visible";
-    // main.style.background = "#FFF";
+    main.style.filter = "brightness(100%)";
+    document.body.style.overflow = 'visible';
   } else {
     product_list.style.display = "block";
-    // document.body.style.overflow = 'hidden';
-    // main.style.backgroundColor = "#FAFAFA";
+    main.style.filter = "brightness(50%)";
+    product_list.style.filter = "brightness(100%)";
+    document.body.style.overflow = 'hidden';
   }
 });
 

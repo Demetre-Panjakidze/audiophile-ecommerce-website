@@ -174,15 +174,15 @@ body {
   }
 
   main {
+    position: relative;
+
     .products {
       position: absolute;
       padding: 31px 28px;
-      left: 24px;
-      right: 24px;
-      top: 114px;
+      top: 24px;
       max-width: 100%;
       border-radius: 8px;
-      background-color: gray;
+      background-color: $white;
       display: none;
 
       .number-of-products {
@@ -262,14 +262,12 @@ body {
 
     @media (min-width: 768px) {
       .products {
-        top: 119px;
-        left: 40px;
       }
     }
 
     @media (min-width: 1440px) {
       .products {
-        left: 165px;
+        top: 32px;
       }
     }
     // section 1
@@ -599,11 +597,12 @@ body {
         }
 
         a {
+          margin: 32px 0 0;
+
           button {
             background-color: inherit;
             width: 160px;
             height: 48px;
-            margin: 32px 0 0;
             border: 2px solid $black;
             text-transform: uppercase;
             font-size: 13px;
@@ -657,6 +656,7 @@ body {
           padding: 41px 0 41px 24px;
           display: flex;
           flex-direction: column;
+          align-items: flex-start;
           width: 100%;
 
           h2 {
@@ -669,11 +669,12 @@ body {
           }
 
           a {
+            margin: 32px 0 0;
+            
             button {
               background-color: inherit;
               width: 160px;
               height: 48px;
-              margin: 32px 0 0;
               border: 2px solid $black;
               text-transform: uppercase;
               font-size: 13px;
@@ -1001,12 +1002,12 @@ body {
       line-height: 18px;
       letter-spacing: 1px;
     }
-  
+
     button:hover,
     button:active {
       color: $dark_brown;
     }
-  
+
     p {
       font-size: 13px;
       font-weight: 700;

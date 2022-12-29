@@ -125,15 +125,16 @@ body header .hidden-div .div a img {
     max-width: 350px;
   }
 }
+body main {
+  position: relative;
+}
 body main .products {
   position: absolute;
   padding: 31px 28px;
-  left: 24px;
-  right: 24px;
-  top: 114px;
+  top: 24px;
   max-width: 100%;
   border-radius: 8px;
-  background-color: gray;
+  background-color: #fff;
   display: none;
 }
 body main .products .number-of-products {
@@ -198,20 +199,14 @@ body main .products a button:hover {
     width: 377px;
   }
 }
-@media (min-width: 768px) {
-  body main .products {
-    top: 119px;
-    left: 40px;
-  }
-}
 @media (min-width: 1440px) {
   body main .products {
-    left: 165px;
+    top: 32px;
   }
 }
 body main .goBack {
   display: block;
-  margin: 16px 0 0 24px;
+  padding: 16px 0 0 24px;
   text-decoration: none;
   color: #000;
 }
@@ -312,7 +307,7 @@ body main .section-1 .product-content .pricing .amount a button:active {
 }
 @media (min-width: 768px) {
   body main .goBack {
-    margin: 33px 0 0 40px;
+    padding: 33px 0 0 40px;
   }
   body main .section-1 {
     padding: 24px 39px 0;
@@ -338,7 +333,7 @@ body main .section-1 .product-content .pricing .amount a button:active {
 }
 @media (min-width: 1440px) {
   body main .goBack {
-    margin: 79px 0 0 165px;
+    padding: 79px 0 0 165px;
   }
   body main .section-1 {
     padding: 56px 165px 0;

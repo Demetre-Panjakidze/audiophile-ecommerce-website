@@ -172,17 +172,16 @@ body {
   }
 
   main {
+    position: relative;
     background-color: $medium_white;
 
     .products {
       position: absolute;
       padding: 31px 28px;
-      left: 24px;
-      right: 24px;
-      top: 114px;
+      top: 24px;
       max-width: 100%;
       border-radius: 8px;
-      background-color: gray;
+      background-color: $white;
       display: none;
 
       .number-of-products {
@@ -265,14 +264,13 @@ body {
 
     @media (min-width: 768px) {
       .products {
-        top: 119px;
-        left: 40px;
+
       }
     }
 
     @media (min-width: 1440px) {
       .products {
-        left: 165px;
+        top: 32px;
       }
     }
 

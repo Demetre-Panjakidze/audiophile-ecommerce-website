@@ -9,6 +9,7 @@ $gray_white: #f1f1f1;
 
 body {
   font-family: "Manrope", sans-serif;
+  
 
   header {
     .header-div {
@@ -174,15 +175,15 @@ body {
   }
 
   main {
+    position: relative;
+
     .products {
       position: absolute;
       padding: 31px 28px;
-      left: 24px;
-      right: 24px;
-      top: 114px;
+      top: 24px;
       max-width: 100%;
       border-radius: 8px;
-      background-color: gray;
+      background-color: $white;
       display: none;
 
       .number-of-products {
@@ -262,20 +263,18 @@ body {
 
     @media (min-width: 768px) {
       .products {
-        top: 119px;
-        left: 40px;
       }
     }
 
     @media (min-width: 1440px) {
       .products {
-        left: 165px;
+        top: 32px;
       }
     }
 
     .goBack {
       display: block;
-      margin: 16px 0 0 24px;
+      padding: 16px 0 0 24px;
       text-decoration: none;
       color: $black;
     }
@@ -402,7 +401,7 @@ body {
     // media for section 1 and a
     @media (min-width: 768px) {
       .goBack {
-        margin: 33px 0 0 40px;
+        padding: 33px 0 0 40px;
       }
 
       .section-1 {
@@ -436,7 +435,7 @@ body {
 
     @media (min-width: 1440px) {
       .goBack {
-        margin: 79px 0 0 165px;
+        padding: 79px 0 0 165px;
       }
 
       .section-1 {

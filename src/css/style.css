@@ -125,15 +125,16 @@ body header .hidden-div .div a img {
     max-width: 350px;
   }
 }
+body main {
+  position: relative;
+}
 body main .products {
   position: absolute;
   padding: 31px 28px;
-  left: 24px;
-  right: 24px;
-  top: 114px;
+  top: 24px;
   max-width: 100%;
   border-radius: 8px;
-  background-color: gray;
+  background-color: #fff;
   display: none;
 }
 body main .products .number-of-products {
@@ -198,15 +199,9 @@ body main .products a button:hover {
     width: 377px;
   }
 }
-@media (min-width: 768px) {
-  body main .products {
-    top: 119px;
-    left: 40px;
-  }
-}
 @media (min-width: 1440px) {
   body main .products {
-    left: 165px;
+    top: 32px;
   }
 }
 body main .section-1 {
@@ -475,11 +470,13 @@ body main .section-3 .product-div-2 h2 {
   letter-spacing: 2px;
   color: #000;
 }
+body main .section-3 .product-div-2 a {
+  margin: 32px 0 0;
+}
 body main .section-3 .product-div-2 a button {
   background-color: inherit;
   width: 160px;
   height: 48px;
-  margin: 32px 0 0;
   border: 2px solid #000;
   text-transform: uppercase;
   font-size: 13px;
@@ -525,6 +522,7 @@ body main .section-3 .product-div-3 .bottom-part {
   padding: 41px 0 41px 24px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 100%;
 }
 body main .section-3 .product-div-3 .bottom-part h2 {
@@ -535,11 +533,13 @@ body main .section-3 .product-div-3 .bottom-part h2 {
   color: #000;
   text-transform: uppercase;
 }
+body main .section-3 .product-div-3 .bottom-part a {
+  margin: 32px 0 0;
+}
 body main .section-3 .product-div-3 .bottom-part a button {
   background-color: inherit;
   width: 160px;
   height: 48px;
-  margin: 32px 0 0;
   border: 2px solid #000;
   text-transform: uppercase;
   font-size: 13px;
