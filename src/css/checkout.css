@@ -143,6 +143,7 @@ body main .products .number-of-products {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 0 31px;
 }
 body main .products .number-of-products h2 {
   font-size: 18px;
@@ -179,10 +180,11 @@ body main .products .total .price {
   font-weight: 700;
 }
 body main .products a {
-  margin: 24px 0 0;
+  margin: 0;
   padding: 0;
 }
 body main .products a button {
+  margin: 24px 0 0;
   width: 100%;
   height: 48px;
   border: none;
@@ -214,19 +216,19 @@ body main .products a button:hover {
     left: 165px;
   }
 }
-body main a {
+body main .goBack {
   display: block;
   padding: 16px 0 0 24px;
   text-decoration: none;
   color: #000;
 }
 @media (min-width: 768px) {
-  body main a {
+  body main .goBack {
     padding: 39px 0 0 48px;
   }
 }
 @media (min-width: 1440px) {
-  body main a {
+  body main .goBack {
     padding: 79px 0 0 165px;
   }
 }
@@ -568,4 +570,59 @@ body footer .footer-flex-bottom .social-links {
     position: relative;
     bottom: 77px;
   }
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 24px;
+}
+.product .product-info {
+  display: flex;
+  gap: 16px;
+}
+.product .product-info .product-name-and-price {
+  display: flex;
+  flex-direction: column;
+}
+.product .product-info .product-name-and-price .product-name {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+.product .product-info .product-name-and-price .product-price {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+.product .mini-increase-decrease {
+  width: 96px;
+  height: 32px;
+  padding: 0 11.5px;
+  background-color: #f1f1f1;
+  gap: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product .mini-increase-decrease button {
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+.product .mini-increase-decrease button:hover,
+.product .mini-increase-decrease button:active {
+  color: #d87d4a;
+}
+.product .mini-increase-decrease p {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=checkout.css.map */

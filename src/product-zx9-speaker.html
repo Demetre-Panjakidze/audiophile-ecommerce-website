@@ -11,6 +11,7 @@
     <script src="./javaScript/hamburgerMenu.js" defer></script>
     <script src="./javaScript/transaction.js" defer></script>
     <script src="./javaScript/cart.js" defer></script>
+    <script src="./javaScript/infoAboutProducts.js" defer></script>
     <!-- title -->
     <link
       rel="icon"
@@ -102,10 +103,10 @@
       </div>
     </header>
     <main>
-      <a href="javascript:history.back()">Go Back</a>
+      <a href="javascript:history.back()" class="goBack">Go Back</a>
       <div class="products">
         <div class="number-of-products">
-          <h2>cart (0)</h2>
+          <h2 class="items-in-cart">cart (0)</h2>
           <p id="remove-all">Remove all</button>
         </div>
         <div class="item-list"></div>
@@ -142,14 +143,14 @@
             Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.
           </p>
           <div class="pricing">
-            <p class="price zx9-speaker-price">$ 4,500</p>
+            <p class="price ZX9-price">$ 4,500</p>
             <div class="amount">
               <div class="increase-decrease">
                 <button id="minus">-</button>
-                <p id="amount" class="zx9-speaker-amount">1</p>
+                <p id="amount" class="ZX9-amount">1</p>
                 <button id="plus">+</button>
               </div>
-              <a href="#"><button id="cart-add" class="zx9-speaker">add to cart</button></a>
+              <a href="#"><button id="cart-add" class="ZX9">add to cart</button></a>
             </div>
           </div>
         </div>
@@ -172,53 +173,57 @@
         </div>
       </div>
       <div class="section section-3">
-        <div class="img-1 img">
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="./assets/product-zx9-speaker/desktop/image-gallery-1.jpg"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="./assets/product-zx9-speaker/tablet/image-gallery-1.jpg"
-            />
-            <img
-              src="./assets/product-zx9-speaker/mobile/image-gallery-1.jpg"
-              alt=""
-            />
-          </picture>
+        <div class="left">
+          <div class="img-1 img">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="./assets/product-zx9-speaker/desktop/image-gallery-1.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/product-zx9-speaker/tablet/image-gallery-1.jpg"
+              />
+              <img
+                src="./assets/product-zx9-speaker/mobile/image-gallery-1.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+          <div class="img-2 img">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="./assets/product-zx9-speaker/desktop/image-gallery-2.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/product-zx9-speaker/tablet/image-gallery-2.jpg"
+              />
+              <img
+                src="./assets/product-zx9-speaker/mobile/image-gallery-2.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
         </div>
-        <div class="img-2 img">
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="./assets/product-zx9-speaker/desktop/image-gallery-2.jpg"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="./assets/product-zx9-speaker/tablet/image-gallery-2.jpg"
-            />
-            <img
-              src="./assets/product-zx9-speaker/mobile/image-gallery-2.jpg"
-              alt=""
-            />
-          </picture>
-        </div>
-        <div class="img-3 img">
-          <picture>
-            <source
-              media="(min-width: 1440px)"
-              srcset="./assets/product-zx9-speaker/desktop/image-gallery-3.jpg"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="./assets/product-zx9-speaker/tablet/image-gallery-3.jpg"
-            />
-            <img
-              src="./assets/product-zx9-speaker/mobile/image-gallery-3.jpg"
-              alt=""
-            />
-          </picture>
+        <div class="right">
+          <div class="img-3 img">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="./assets/product-zx9-speaker/desktop/image-gallery-3.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/product-zx9-speaker/tablet/image-gallery-3.jpg"
+              />
+              <img
+                src="./assets/product-zx9-speaker/mobile/image-gallery-3.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
         </div>
       </div>
       <div class="section section-4">
@@ -302,7 +307,7 @@
             />
           </div>
           <p>headphones</p>
-          <a href="#">
+          <a href="./headphones.html">
             <p>shop</p>
             <img src="./assets/shared/desktop/icon-arrow-right.svg" alt="" />
           </a>
