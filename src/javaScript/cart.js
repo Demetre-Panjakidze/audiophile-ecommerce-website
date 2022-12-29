@@ -12,6 +12,7 @@ cart_icon.addEventListener("click", () => {
     product_list.style.display = "block";
     main.style.filter = "brightness(50%)";
     product_list.style.filter = "brightness(100%)";
+    product_list.style.zIndex = "10";
     document.body.style.overflow = 'hidden';
   }
 });
