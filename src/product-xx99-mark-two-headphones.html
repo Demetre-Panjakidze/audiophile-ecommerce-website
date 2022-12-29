@@ -8,6 +8,7 @@
     <!-- css and js -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/product.css" />
+ 
     <script src="./javaScript/hamburgerMenu.js" defer></script>
     <script src="./javaScript/transaction.js" defer></script>
     <script src="./javaScript/cart.js" defer></script>
@@ -104,18 +105,7 @@
     </header>
     <main>
       <a href="javascript:history.back()" class="goBack">Go Back</a>
-      <div class="products">
-        <div class="number-of-products">
-          <h2 class="items-in-cart">cart (0)</h2>
-          <p id="remove-all">Remove all</button>
-        </div>
-        <div class="item-list"></div>
-        <div class="total">
-          <p>Total</p>
-          <p class="price">$ 0</p>
-        </div>
-        <a href="./checkout.html"><button class="checkout">checkout</button></a>
-      </div>
+      
       <div class="section section-1">
         <div class="product-img">
           <picture>
@@ -397,5 +387,20 @@
         </div>
       </div>
     </footer>
+
+    <div id="overlay">
+			  <div class="products">  
+			  <div class="number-of-products">
+          <h2 class="all_quantity">cart (0)</h2>
+          <p id="remove-all">Remove all</button>
+        </div>
+        <div class="item-list"></div>
+        <div class="total">
+          <p>Total</p>
+          <p class="total_price">$ 0</p>
+        </div>
+        <a href="./checkout.html"><button class="checkout">checkout</button></a>
+      </div>    
+		</div>
   </body>
 </html>
