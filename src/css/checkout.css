@@ -133,6 +133,8 @@ body main .products {
   position: absolute;
   padding: 31px 28px;
   top: 24px;
+  right: 24px;
+  left: 24px;
   max-width: 100%;
   border-radius: 8px;
   background-color: #fff;
@@ -202,10 +204,18 @@ body main .products a button:hover {
 @media (min-width: 425px) {
   body main .products {
     width: 377px;
+    right: 0;
+    left: calc(100% - 377px - 24px);
+  }
+}
+@media (min-width: 768px) {
+  body main .products {
+    left: calc(100% - 377px - 40px);
   }
 }
 @media (min-width: 1440px) {
   body main .products {
+    left: calc(100% - 377px - 165px);
     top: 32px;
   }
 }

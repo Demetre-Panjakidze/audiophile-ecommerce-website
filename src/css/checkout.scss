@@ -179,6 +179,8 @@ body {
       position: absolute;
       padding: 31px 28px;
       top: 24px;
+      right: 24px;
+      left: 24px;
       max-width: 100%;
       border-radius: 8px;
       background-color: $white;
@@ -259,17 +261,20 @@ body {
     @media (min-width: 425px) {
       .products {
         width: 377px;
+        right: 0;
+        left: calc(100% - 377px - 24px);
       }
     }
 
     @media (min-width: 768px) {
       .products {
-
+        left: calc(100% - 377px - 40px);
       }
     }
 
     @media (min-width: 1440px) {
       .products {
+        left: calc(100% - 377px - 165px);
         top: 32px;
       }
     }
