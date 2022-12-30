@@ -244,25 +244,47 @@ body {
             }
 
             .label-div {
-              .label {
-                display: flex;
-                gap: 16px;
-                padding: 18px 0 18px 16px;
+              .choice-1,
+              .choice-2 {
+                width: 100%;
                 border: 1px solid #cfcfcf;
                 border-radius: 8px;
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 19px;
-                letter-spacing: -0.25px;
+                padding: 18px 0 18px 16px;
                 cursor: pointer;
 
-                input {
+                label {
+                  font-size: 14px;
+                  font-weight: 700;
+                  line-height: 19px;
+                  letter-spacing: -0.25px;
                   cursor: pointer;
+                  display: flex;
+                  align-items: center;
+                  gap: 16px;
+
+                  &:before {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    border: solid 5px #fff;
+                    border-radius: 12px;
+                    box-shadow: 0 0 0 1px #cfcfcf;
+                    display: inline-block;
+                  }
+                }
+
+                input {
+                  display: none;
+                  cursor: pointer;
+
+                  &:checked + label:before {
+                    background: #d87d4a;
+                  }
                 }
               }
 
-              .label2 {
-                margin: 17px 0 0;
+              .choice-2 {
+                margin: 16px 0 0;
               }
             }
           }
@@ -482,7 +504,6 @@ body {
 
     @media (min-width: 1440px) {
       form {
-        // gap: 30px;
         margin: 0;
         padding: 38px 165px 200px;
       }
@@ -726,7 +747,7 @@ body {
 
 @media (min-width: 768px) {
   .products {
-		top: 127.4px;
+    top: 127.4px;
     left: calc(100% - 377px - 40px);
   }
 }

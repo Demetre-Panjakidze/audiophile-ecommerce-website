@@ -37,11 +37,12 @@ document
 function turned_on() {
   main_div.style.display = "block";
   main_div.style.cursor = "default";
-
+  document.body.style.overflow = "hidden";
 }
 
 function turned_off() {
   main_div.style.display = "none";
+  document.body.style.overflow = "visible";
 }
 
 function renderProducts() {

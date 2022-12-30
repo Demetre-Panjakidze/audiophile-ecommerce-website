@@ -188,23 +188,46 @@ body main form .form-top .details .payment p {
   letter-spacing: -0.2142857164px;
   margin: 16px 0 0;
 }
-body main form .form-top .details .payment .label-div .label {
-  display: flex;
-  gap: 16px;
-  padding: 18px 0 18px 16px;
+body main form .form-top .details .payment .label-div .choice-1,
+body main form .form-top .details .payment .label-div .choice-2 {
+  width: 100%;
   border: 1px solid #cfcfcf;
   border-radius: 8px;
+  padding: 18px 0 18px 16px;
+  cursor: pointer;
+}
+body main form .form-top .details .payment .label-div .choice-1 label,
+body main form .form-top .details .payment .label-div .choice-2 label {
   font-size: 14px;
   font-weight: 700;
   line-height: 19px;
   letter-spacing: -0.25px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
-body main form .form-top .details .payment .label-div .label input {
+body main form .form-top .details .payment .label-div .choice-1 label:before,
+body main form .form-top .details .payment .label-div .choice-2 label:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: solid 5px #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #cfcfcf;
+  display: inline-block;
+}
+body main form .form-top .details .payment .label-div .choice-1 input,
+body main form .form-top .details .payment .label-div .choice-2 input {
+  display: none;
   cursor: pointer;
 }
-body main form .form-top .details .payment .label-div .label2 {
-  margin: 17px 0 0;
+body main form .form-top .details .payment .label-div .choice-1 input:checked + label:before,
+body main form .form-top .details .payment .label-div .choice-2 input:checked + label:before {
+  background: #d87d4a;
+}
+body main form .form-top .details .payment .label-div .choice-2 {
+  margin: 16px 0 0;
 }
 body main form .form-top .details .input-field {
   display: flex;
