@@ -448,6 +448,10 @@ body main .section-4 .sugestions .sugestion .sugestion-content a button {
   border: none;
   cursor: pointer;
 }
+body main .section-4 .sugestions .sugestion .sugestion-content a button:hover,
+body main .section-4 .sugestions .sugestion .sugestion-content a button:active {
+  background-color: #fbaf85;
+}
 @media (min-width: 768px) {
   body main .section-4 {
     padding-inline: 39px;
@@ -645,6 +649,9 @@ body footer .footer-flex-top .footer-links a {
   font-weight: 700;
   line-height: 25px;
   letter-spacing: 2px;
+}
+body footer .footer-flex-top .footer-links a:hover {
+  color: #d87d4a;
 }
 body footer .big-p {
   font-size: 15px;

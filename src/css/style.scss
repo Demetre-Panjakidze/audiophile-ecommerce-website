@@ -427,12 +427,14 @@ body {
         }
 
         a {
+          margin: 24px 0 55px;
+
           button {
             background-color: $black;
             color: $white;
+            margin: 0;
             width: 160px;
             height: 48px;
-            margin: 24px 0 55px;
             border: none;
             text-transform: uppercase;
             cursor: pointer;
@@ -440,6 +442,10 @@ body {
             font-weight: 700;
             line-height: 18px;
             letter-spacing: 1px;
+          }
+
+          button:hover {
+            background-color: #4c4c4c;
           }
         }
       }
@@ -466,16 +472,14 @@ body {
           }
 
           a {
-            button {
-              margin: 40px 0 64px;
-            }
+            margin: 40px 0 124px;
           }
         }
       }
 
       @media (min-width: 1440px) {
         .product-div-1 {
-          padding: 133px 95px 115px 666px;
+          padding: 133px 95px 124px 666px;
           //background
           background-image: url(../assets/home/desktop/image-speaker-zx9.png),
             url(../assets/home/desktop/pattern-circles.svg);
@@ -483,8 +487,13 @@ body {
           background-position: left 117.49px bottom -13px, left -150px top -40px;
           text-align: left;
           display: block;
+
           h1 {
             margin: 0;
+          }
+
+          p {
+            margin: 24px 0 40px;
           }
         }
       }
@@ -526,6 +535,12 @@ body {
             line-height: 18px;
             letter-spacing: 1px;
             cursor: pointer;
+            color: $black;
+          }
+
+          button:hover {
+            background-color: $black;
+            color: $white;
           }
         }
       }
@@ -598,6 +613,12 @@ body {
               line-height: 18px;
               letter-spacing: 1px;
               cursor: pointer;
+              color: $black;
+            }
+
+            button:hover {
+              background-color: $black;
+              color: $white;
             }
           }
         }
@@ -773,6 +794,10 @@ body {
           font-weight: 700;
           line-height: 25px;
           letter-spacing: 2px;
+        }
+
+        a:hover {
+          color: $dark_brown;
         }
       }
     }

@@ -552,6 +552,10 @@ body {
           line-height: 25px;
           letter-spacing: 2px;
         }
+
+        a:hover {
+          color: $dark_brown;
+        }
       }
     }
 

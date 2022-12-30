@@ -334,12 +334,15 @@ body main .section-3 .product-div-1 p {
   margin: 24px 0 0;
   max-width: 280px;
 }
+body main .section-3 .product-div-1 a {
+  margin: 24px 0 55px;
+}
 body main .section-3 .product-div-1 a button {
   background-color: #000;
   color: #fff;
+  margin: 0;
   width: 160px;
   height: 48px;
-  margin: 24px 0 55px;
   border: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -347,6 +350,9 @@ body main .section-3 .product-div-1 a button {
   font-weight: 700;
   line-height: 18px;
   letter-spacing: 1px;
+}
+body main .section-3 .product-div-1 a button:hover {
+  background-color: #4c4c4c;
 }
 @media (min-width: 768px) {
   body main .section-3 .product-div-1 {
@@ -364,13 +370,13 @@ body main .section-3 .product-div-1 a button {
   body main .section-3 .product-div-1 p {
     max-width: 349px;
   }
-  body main .section-3 .product-div-1 a button {
-    margin: 40px 0 64px;
+  body main .section-3 .product-div-1 a {
+    margin: 40px 0 124px;
   }
 }
 @media (min-width: 1440px) {
   body main .section-3 .product-div-1 {
-    padding: 133px 95px 115px 666px;
+    padding: 133px 95px 124px 666px;
     background-image: url(../assets/home/desktop/image-speaker-zx9.png), url(../assets/home/desktop/pattern-circles.svg);
     background-size: 410.23px 493px, 944px;
     background-position: left 117.49px bottom -13px, left -150px top -40px;
@@ -379,6 +385,9 @@ body main .section-3 .product-div-1 a button {
   }
   body main .section-3 .product-div-1 h1 {
     margin: 0;
+  }
+  body main .section-3 .product-div-1 p {
+    margin: 24px 0 40px;
   }
 }
 body main .section-3 .product-div-2 {
@@ -414,6 +423,11 @@ body main .section-3 .product-div-2 a button {
   line-height: 18px;
   letter-spacing: 1px;
   cursor: pointer;
+  color: #000;
+}
+body main .section-3 .product-div-2 a button:hover {
+  background-color: #000;
+  color: #fff;
 }
 @media (min-width: 768px) {
   body main .section-3 .product-div-2 {
@@ -477,6 +491,11 @@ body main .section-3 .product-div-3 .bottom-part a button {
   line-height: 18px;
   letter-spacing: 1px;
   cursor: pointer;
+  color: #000;
+}
+body main .section-3 .product-div-3 .bottom-part a button:hover {
+  background-color: #000;
+  color: #fff;
 }
 @media (min-width: 768px) {
   body main .section-3 .product-div-3 {
@@ -607,6 +626,9 @@ body footer .footer-flex-top .footer-links a {
   font-weight: 700;
   line-height: 25px;
   letter-spacing: 2px;
+}
+body footer .footer-flex-top .footer-links a:hover {
+  color: #d87d4a;
 }
 body footer .big-p {
   font-size: 15px;

@@ -305,7 +305,7 @@ body {
       }
     }
 
-    // media for section 1 and a
+    // media for section 1 and goBack
     @media (min-width: 768px) {
       .goBack {
         margin: 33px 0 0 40px;
@@ -585,6 +585,11 @@ body {
                 border: none;
                 cursor: pointer;
               }
+
+              button:hover,
+              button:active {
+                background-color: $light_brown;
+              }
             }
           }
         }
@@ -846,6 +851,10 @@ body {
           font-weight: 700;
           line-height: 25px;
           letter-spacing: 2px;
+        }
+
+        a:hover {
+          color: $dark_brown;
         }
       }
     }
