@@ -43,12 +43,10 @@ body {
       }
 
       .header-right-part {
-        a {
-          button {
-            background-color: inherit;
-            border: none;
-            cursor: pointer;
-          }
+        button {
+          background-color: inherit;
+          border: none;
+          cursor: pointer;
         }
       }
     }

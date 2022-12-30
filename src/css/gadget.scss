@@ -44,12 +44,10 @@ body {
       }
 
       .header-right-part {
-        a {
-          button {
-            background-color: inherit;
-            border: none;
-            cursor: pointer;
-          }
+        button {
+          background-color: inherit;
+          border: none;
+          cursor: pointer;
         }
       }
     }
@@ -813,7 +811,7 @@ body {
 
 @media (min-width: 768px) {
   .products {
-		top: 127.4px;
+    top: 127.4px;
     left: calc(100% - 377px - 40px);
   }
 }

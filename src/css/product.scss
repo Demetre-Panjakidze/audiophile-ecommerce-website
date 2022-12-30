@@ -43,12 +43,10 @@ body {
       }
 
       .header-right-part {
-        a {
-          button {
-            background-color: inherit;
-            border: none;
-            cursor: pointer;
-          }
+        button {
+          background-color: inherit;
+          border: none;
+          cursor: pointer;
         }
       }
     }
@@ -260,14 +258,14 @@ body {
                 font-weight: 700;
                 line-height: 18px;
                 letter-spacing: 1px;
-								background-color: inherit;
-								color: $black;
+                background-color: inherit;
+                color: $black;
               }
 
               button:hover,
               button:active {
                 color: $dark_brown;
-								background-color: inherit;
+                background-color: inherit;
               }
 
               p {
@@ -1100,7 +1098,7 @@ body {
 
 @media (min-width: 768px) {
   .products {
-		top: 127.4px;
+    top: 127.4px;
     left: calc(100% - 377px - 40px);
   }
 }
