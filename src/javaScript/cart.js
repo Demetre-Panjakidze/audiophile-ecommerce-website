@@ -4,7 +4,7 @@ const main = document.querySelector("main");
 const checkout_btn = document.getElementsByClassName("checkout")[0];
 
 cart_icon?.addEventListener("click", () => {
-  on();
+  turned_on();
   let product_num = 0;
   let product_price = 0;
   const information_about_products = localStorage.getItem("products");
@@ -12,12 +12,12 @@ cart_icon?.addEventListener("click", () => {
   console.log(parsedInfo);
   parsedInfo.forEach((info) => {
     product_num += +info.quantity;
-    product_price += +info.price.replace(",", ".") * +info.quantity;
+    product_price += +info.price.replace(",", "") * +info.quantity;
   });
 
   document.getElementsByClassName(
     "total_price"
-  )[0].innerHTML = `$ ${product_price}`;
+  )[0].innerHTML = `$ ${product_price.toLocaleString()}`;
   document.getElementsByClassName(
     "all_quantity"
   )[0].innerHTML = `Cart (${product_num})`;
@@ -25,7 +25,7 @@ cart_icon?.addEventListener("click", () => {
 });
 
 document.getElementById("overlay")?.addEventListener("click", () => {
-  off();
+  turned_off();
 });
 
 document
@@ -34,11 +34,11 @@ document
     e.stopPropagation();
   });
 
-function on() {
+function turned_on() {
   document.getElementById("overlay").style.display = "block";
 }
 
-function off() {
+function turned_off() {
   document.getElementById("overlay").style.display = "none";
 }
 
