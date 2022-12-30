@@ -114,6 +114,9 @@ body header .hidden-div .div a img {
   width: 9px;
   height: 14px;
 }
+body header .hidden-div .div a:hover p {
+  color: #d87d4a;
+}
 @media (min-width: 550px) {
   body header .hidden-div {
     padding: 108px 40px 67px;

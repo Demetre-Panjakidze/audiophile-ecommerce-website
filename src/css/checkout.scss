@@ -151,6 +151,12 @@ body {
             height: 14px;
           }
         }
+
+        a:hover {
+          p {
+            color: $dark_brown;
+          }
+        }
       }
     }
 

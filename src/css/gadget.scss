@@ -154,6 +154,12 @@ body {
             height: 14px;
           }
         }
+
+        a:hover {
+          p {
+            color: $dark_brown;
+          }
+        }
       }
     }
 
@@ -405,6 +411,12 @@ body {
           img {
             width: 9px;
             height: 14px;
+          }
+        }
+
+        a:hover {
+          p {
+            color: $dark_brown;
           }
         }
       }
