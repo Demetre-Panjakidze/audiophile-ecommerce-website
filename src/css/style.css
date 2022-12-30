@@ -128,24 +128,6 @@ body header .hidden-div .div a img {
 body main {
   position: relative;
 }
-@media (min-width: 425px) {
-  body main .products {
-    width: 377px;
-    right: 0;
-    left: calc(100% - 377px - 24px);
-  }
-}
-@media (min-width: 768px) {
-  body main .products {
-    left: calc(100% - 377px - 40px);
-  }
-}
-@media (min-width: 1440px) {
-  body main .products {
-    top: 32px;
-    left: calc(100% - 377px - 165px);
-  }
-}
 body main .section-1 {
   padding: 108px 24px 112px;
   background-color: #151515;
@@ -763,13 +745,13 @@ body footer .footer-flex-bottom .social-links {
 
 .products {
   position: absolute;
-  top: 24px;
+  top: 122.4px;
   right: 24px;
+  left: 24px;
   padding: 31px 28px;
   max-width: 100%;
   border-radius: 8px;
   background-color: #fff;
-  width: 377px;
 }
 .products .number-of-products {
   display: flex;
@@ -827,4 +809,24 @@ body footer .footer-flex-bottom .social-links {
 }
 .products a button:hover {
   background-color: #fbaf85;
+}
+
+@media (min-width: 425px) {
+  .products {
+    width: 377px;
+    right: 0;
+    left: calc(100% - 377px - 24px);
+  }
+}
+@media (min-width: 768px) {
+  .products {
+    top: 127.4px;
+    left: calc(100% - 377px - 40px);
+  }
+}
+@media (min-width: 1440px) {
+  .products {
+    top: 126.4px;
+    left: calc(100% - 377px - 165px);
+  }
 }/*# sourceMappingURL=style.css.map */
