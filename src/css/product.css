@@ -284,10 +284,13 @@ body main .section-1 .product-content .pricing .amount .increase-decrease button
   font-weight: 700;
   line-height: 18px;
   letter-spacing: 1px;
+  background-color: inherit;
+  color: #000;
 }
 body main .section-1 .product-content .pricing .amount .increase-decrease button:hover,
 body main .section-1 .product-content .pricing .amount .increase-decrease button:active {
   color: #d87d4a;
+  background-color: inherit;
 }
 body main .section-1 .product-content .pricing .amount .increase-decrease p {
   font-size: 13px;
@@ -295,10 +298,7 @@ body main .section-1 .product-content .pricing .amount .increase-decrease p {
   line-height: 18px;
   letter-spacing: 1px;
 }
-body main .section-1 .product-content .pricing .amount a {
-  margin: 0;
-}
-body main .section-1 .product-content .pricing .amount a button {
+body main .section-1 .product-content .pricing .amount button {
   width: 160px;
   height: 48px;
   background-color: #d87d4a;
@@ -311,8 +311,8 @@ body main .section-1 .product-content .pricing .amount a button {
   line-height: 18px;
   letter-spacing: 1px;
 }
-body main .section-1 .product-content .pricing .amount a button:hover,
-body main .section-1 .product-content .pricing .amount a button:active {
+body main .section-1 .product-content .pricing .amount button:hover,
+body main .section-1 .product-content .pricing .amount button:active {
   background-color: #fbaf85;
 }
 @media (min-width: 768px) {
