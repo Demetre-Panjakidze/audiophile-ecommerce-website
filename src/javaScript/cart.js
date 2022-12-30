@@ -2,6 +2,7 @@ const cart_icon = document.getElementById("cart");
 const product_list = document.getElementsByClassName("products")[0];
 const main = document.querySelector("main");
 const checkout_btn = document.getElementsByClassName("checkout")[0];
+const main_div = document.getElementById("overlay");
 
 cart_icon?.addEventListener("click", () => {
   turned_on();
@@ -9,7 +10,6 @@ cart_icon?.addEventListener("click", () => {
   let product_price = 0;
   const information_about_products = localStorage.getItem("products");
   const parsedInfo = JSON.parse(information_about_products);
-  console.log(parsedInfo);
   parsedInfo.forEach((info) => {
     product_num += +info.quantity;
     product_price += +info.price.replace(",", "") * +info.quantity;
@@ -24,7 +24,7 @@ cart_icon?.addEventListener("click", () => {
   renderProducts();
 });
 
-document.getElementById("overlay")?.addEventListener("click", () => {
+main_div?.addEventListener("click", () => {
   turned_off();
 });
 
@@ -35,11 +35,13 @@ document
   });
 
 function turned_on() {
-  document.getElementById("overlay").style.display = "block";
+  main_div.style.display = "block";
+  main_div.style.cursor = "default";
+
 }
 
 function turned_off() {
-  document.getElementById("overlay").style.display = "none";
+  main_div.style.display = "none";
 }
 
 function renderProducts() {
