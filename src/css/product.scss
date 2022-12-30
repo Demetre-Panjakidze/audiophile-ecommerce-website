@@ -177,8 +177,8 @@ body {
     position: relative;
 
     .goBack {
-      display: block;
-      padding: 16px 0 0 24px;
+      display: inline-block;
+      margin: 16px 0 0 24px;
       text-decoration: none;
       color: $black;
     }
@@ -304,7 +304,7 @@ body {
     // media for section 1 and a
     @media (min-width: 768px) {
       .goBack {
-        padding: 33px 0 0 40px;
+        margin: 33px 0 0 40px;
       }
 
       .section-1 {
@@ -338,7 +338,7 @@ body {
 
     @media (min-width: 1440px) {
       .goBack {
-        padding: 79px 0 0 165px;
+        margin: 79px 0 0 165px;
       }
 
       .section-1 {

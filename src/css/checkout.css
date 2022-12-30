@@ -130,19 +130,19 @@ body main {
   background-color: #fafafa;
 }
 body main .goBack {
-  display: block;
-  padding: 16px 0 0 24px;
+  display: inline-block;
+  margin: 16px 0 0 24px;
   text-decoration: none;
   color: #000;
 }
 @media (min-width: 768px) {
   body main .goBack {
-    padding: 39px 0 0 48px;
+    margin: 39px 0 0 48px;
   }
 }
 @media (min-width: 1440px) {
   body main .goBack {
-    padding: 79px 0 0 165px;
+    margin: 79px 0 0 165px;
   }
 }
 body main form {
