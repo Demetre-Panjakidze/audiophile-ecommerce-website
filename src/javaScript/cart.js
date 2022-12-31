@@ -3,6 +3,9 @@ const product_list = document.getElementsByClassName("products")[0];
 const main = document.querySelector("main");
 const checkout_btn = document.getElementsByClassName("checkout")[0];
 const main_div = document.getElementById("overlay");
+const mini_increase = document.getElementById("mini-plus");
+const mini_decrease = document.getElementById("mini-minus");
+const mini_result = document.getElementById("product_amount");
 
 cart_icon?.addEventListener("click", () => {
   turned_on();
