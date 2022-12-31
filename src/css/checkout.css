@@ -248,11 +248,20 @@ body main form .form-top .details .input-field .input label {
   font-weight: 700;
   line-height: 16px;
   letter-spacing: -0.2142857164px;
+  display: flex;
+  justify-content: space-between;
+}
+body main form .form-top .details .input-field .input label small {
+  font-weight: 500;
+  display: none;
 }
 body main form .form-top .details .input-field .input input {
   border: 1px solid #cfcfcf;
   border-radius: 8px;
   padding: 18px 0 19px 24px;
+}
+body main form .form-top .details .input-field .input input:invalid {
+  border: 2px solid #cd2c2c;
 }
 body main form .form-top .details .input-field .input-5 input::-webkit-outer-spin-button,
 body main form .form-top .details .input-field .input-5 input::-webkit-inner-spin-button,

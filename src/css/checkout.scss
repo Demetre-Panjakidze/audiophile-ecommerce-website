@@ -309,12 +309,23 @@ body {
                 font-weight: 700;
                 line-height: 16px;
                 letter-spacing: -0.2142857164144516px;
+                display: flex;
+                justify-content: space-between;
+
+                small {
+                  font-weight: 500;
+                  display: none;
+                }
               }
 
               input {
                 border: 1px solid #cfcfcf;
                 border-radius: 8px;
                 padding: 18px 0 19px 24px;
+              }
+
+              input:invalid {
+                border: 2px solid #cd2c2c;
               }
             }
 

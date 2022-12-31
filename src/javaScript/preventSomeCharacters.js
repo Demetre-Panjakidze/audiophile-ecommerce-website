@@ -33,7 +33,7 @@ choice1.addEventListener("click", () => {
   choice2.style.border = "1px solid #CFCFCF";
   card_info_div.style.display = "block";
   card_info.style.display = "none";
-  console.log(beforeLabel1);
+  // console.log(beforeLabel1);
   // beforeLabel1.style.background = "#D87D4A"
   // beforeLabel2.style.background = "#CFCFCF"
 });
@@ -45,6 +45,51 @@ choice2.addEventListener("click", () => {
   card_info.style.display = "flex";
   // beforeLabel1.style.background = "#CFCFCF"
   // beforeLabel2.style.background = "#D87D4A"
-  
 });
 
+const inputs = document.querySelectorAll(".input");
+
+console.log(inputs);
+
+inputs.forEach((x) => {
+  x.addEventListener("input", () => {
+    document.addEventListener("click", function (event) {
+      if (!x.contains(event.target)) {
+        const firstChildOfX = x.firstElementChild;
+        const lastChildOfX = x.lastElementChild;
+        const message = firstChildOfX.firstElementChild;
+
+        if (lastChildOfX.value == "") {
+          firstChildOfX.style.color = "#cd2c2c";
+          lastChildOfX.style.border = "2px solid #cd2c2c";
+          message.style.display = "block";
+        }
+
+        if (lastChildOfX.value !== "") {
+          firstChildOfX.style.color = "#000";
+          lastChildOfX.style.border = "2px solid #CFCFCF";
+          message.style.display = "none";
+        }
+      }
+    });
+  });
+});
+
+const mailDiv = document.getElementsByClassName("input-2")[0];
+mailDiv.addEventListener("input", () => {
+  document.addEventListener("click", function (event) {
+    if (!mailDiv.contains(event.target)) {
+      const mailLabel = mailDiv.firstElementChild;
+      const badMessage = mailLabel.firstElementChild;
+      const mailInput = mailDiv.lastElementChild;
+      badMessage.textContent = "Field cannot be empty";
+
+      if (!mailInput.checkValidity()) {
+        badMessage.textContent = "Wrong format";
+        mailLabel.style.color = "#cd2c2c";
+        mailInput.style.border = "2px solid #cd2c2c";
+        badMessage.style.display = "block";
+      }
+    }
+  });
+});
