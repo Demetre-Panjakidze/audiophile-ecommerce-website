@@ -514,6 +514,61 @@ body footer .footer-flex-bottom .social-links {
   }
 }
 
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 24px;
+}
+.product .product-info {
+  display: flex;
+  gap: 16px;
+}
+.product .product-info .product-name-and-price {
+  display: flex;
+  flex-direction: column;
+}
+.product .product-info .product-name-and-price .product-name {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+.product .product-info .product-name-and-price .product-price {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
+.product .mini-increase-decrease {
+  width: 96px;
+  height: 32px;
+  padding: 0 11.5px;
+  background-color: #f1f1f1;
+  gap: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product .mini-increase-decrease button {
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+.product .mini-increase-decrease button:hover,
+.product .mini-increase-decrease button:active {
+  color: #d87d4a;
+}
+.product .mini-increase-decrease p {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+
 #overlay {
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
