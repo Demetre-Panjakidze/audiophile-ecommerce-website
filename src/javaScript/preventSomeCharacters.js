@@ -49,16 +49,14 @@ choice2.addEventListener("click", () => {
 
 const inputs = document.querySelectorAll(".input");
 
-console.log(inputs);
-
 inputs.forEach((x) => {
   x.addEventListener("input", () => {
+    const firstChildOfX = x.firstElementChild;
+    const lastChildOfX = x.lastElementChild;
+    const message = firstChildOfX.firstElementChild;
+
     document.addEventListener("click", function (event) {
       if (!x.contains(event.target)) {
-        const firstChildOfX = x.firstElementChild;
-        const lastChildOfX = x.lastElementChild;
-        const message = firstChildOfX.firstElementChild;
-
         if (lastChildOfX.value == "") {
           firstChildOfX.style.color = "#cd2c2c";
           lastChildOfX.style.border = "2px solid #cd2c2c";
@@ -75,13 +73,15 @@ inputs.forEach((x) => {
   });
 });
 
+
 const mailDiv = document.getElementsByClassName("input-2")[0];
+const mailLabel = mailDiv.firstElementChild;
+const badMessage = mailLabel.firstElementChild;
+const mailInput = mailDiv.lastElementChild;
+
 mailDiv.addEventListener("input", () => {
   document.addEventListener("click", function (event) {
     if (!mailDiv.contains(event.target)) {
-      const mailLabel = mailDiv.firstElementChild;
-      const badMessage = mailLabel.firstElementChild;
-      const mailInput = mailDiv.lastElementChild;
       badMessage.textContent = "Field cannot be empty";
 
       if (!mailInput.checkValidity()) {
@@ -93,3 +93,41 @@ mailDiv.addEventListener("input", () => {
     }
   });
 });
+
+const submit = document.getElementsByClassName("submit-button")[0];
+// submit.removeAttribute("disabled");
+submit.addEventListener("click", () => {
+  inputs.forEach((x) => {
+    const firstChildOfX = x.firstElementChild;
+    const lastChildOfX = x.lastElementChild;
+    const message = firstChildOfX.firstElementChild;
+
+    if (lastChildOfX.value == "") {
+      firstChildOfX.style.color = "#cd2c2c";
+      lastChildOfX.style.border = "2px solid #cd2c2c";
+      message.style.display = "block";
+      // submit.disabled = true;
+    }
+
+    if (lastChildOfX.value !== "") {
+      firstChildOfX.style.color = "#000";
+      lastChildOfX.style.border = "2px solid #CFCFCF";
+      message.style.display = "none";
+      // submit.removeAttribute("disabled");
+    }
+  });
+
+  // mailDiv.addEventListener("input", () => {
+  //   badMessage.textContent = "Field cannot be empty";
+  //   submit.removeAttribute("disabled");
+
+  //   if (!mailInput.checkValidity()) {
+  //     badMessage.textContent = "Wrong format";
+  //     mailLabel.style.color = "#cd2c2c";
+  //     mailInput.style.border = "2px solid #cd2c2c";
+  //     badMessage.style.display = "block";
+  //     submit.disabled = true;
+  //   }
+  // });
+});
+

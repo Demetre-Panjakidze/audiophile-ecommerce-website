@@ -104,110 +104,112 @@
     </header>
     <main>
       <a href="javascript:history.back()" class="goBack">Go Back</a>
-      <form action="">
-        <div class="form-top">
-          <h1>checkout</h1>
-          <div class="billing-details details">
-            <h3>Billing details</h3>
-            <div class="input-field-1 input-field">
-              <div class="input-1 input">
-                <label for="name">Name<small class="small">Field cannot be empty</small></label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Alexei Ward"
-                />
-              </div>
-              <div class="input-2 input">
-                <label for="email">Email Address<small class="small">Field cannot be empty</small></label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="alexei@mail.com"
-                />
-              </div>
-              <div class="input-3 input">
-                <label for="phone">Phone Number<small class="small">Field cannot be empty</small></label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="+1 202-555-0136"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="shipping-info details">
-            <h3>shipping info</h3>
-            <div class="input-field-2 input-field">
-              <div class="input-4 input">
-                <label for="address">Your Address<small class="small">Field cannot be empty</small></label>
-                <input
-                  type="text"
-                  id="address"
-                  name="address"
-                  placeholder="1137 Williams Avenue"
-                />
-              </div>
-              <div class="input-5 input">
-                <label for="zip">ZIP Code<small class="small">Field cannot be empty</small></label>
-                <input type="number" id="zip" name="zip" placeholder="10001" />
-              </div>
-              <div class="input-6 input">
-                <label for="city">City<small class="small">Field cannot be empty</small></label>
-                <input
-                  type="text"
-                  id="city"
-                  name="city"
-                  placeholder="New York"
-                />
-              </div>
-              <div class="input-7 input">
-                <label for="country">Country<small class="small">Field cannot be empty</small></label>
-                <input
-                  type="text"
-                  id="country"
-                  name="country"
-                  placeholder="United States"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="payment-details details">
-            <h3>payment details</h3>
-            <div class="payment">
-              <p>Payment Method</p>
-              <div class="label-div">
-                <div class="choice-1 choice">
-                  <input type="radio" name="payment" id="input1" />
-                  <label id="label1" class="label label1" for="input1">e-Money</label>
+      <div class="form-container">
+        <form action="">
+          <div class="form-top">
+            <h1>checkout</h1>
+            <div class="billing-details details">
+              <h3>Billing details</h3>
+              <div class="input-field-1 input-field">
+                <div class="input-1 input">
+                  <label for="name">Name<small class="small">Field cannot be empty</small></label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Alexei Ward"
+                  />
                 </div>
-                <div class="choice-2 choice">
-                  <input type="radio" name="payment" id="input2" />
-                  <label id="label2" class="label label2" for="input2">Cash on Delivery</label>
+                <div class="input-2 input">
+                  <label for="email">Email Address<small class="small">Field cannot be empty</small></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="alexei@mail.com"
+                  />
+                </div>
+                <div class="input-3 input">
+                  <label for="phone">Phone Number<small class="small">Field cannot be empty</small></label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+1 202-555-0136"
+                  />
                 </div>
               </div>
             </div>
-          </div>
-          <div class="card-info details">
-            <div class="input-field-3 input-field">
-              <div class="input-8 input">
-                <label for="eMoneyNum">e-Money Number<small class="small">Field cannot be empty</small></label>
-                <input type="number" id="eMoneyNum" name="eMoneyNum" placeholder="238521993" />
-              </div>
-              <div class="input-9 input">
-                <label for="eMoneyPIN">e-Money PIN<small class="small">Field cannot be empty</small></label>
-                <input type="number" id="eMoneyPIN" name="eMoneyPIN" placeholder="6891" />
+            <div class="shipping-info details">
+              <h3>shipping info</h3>
+              <div class="input-field-2 input-field">
+                <div class="input-4 input">
+                  <label for="address">Your Address<small class="small">Field cannot be empty</small></label>
+                  <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    placeholder="1137 Williams Avenue"
+                  />
+                </div>
+                <div class="input-5 input">
+                  <label for="zip">ZIP Code<small class="small">Field cannot be empty</small></label>
+                  <input type="number" id="zip" name="zip" placeholder="10001" />
+                </div>
+                <div class="input-6 input">
+                  <label for="city">City<small class="small">Field cannot be empty</small></label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="New York"
+                  />
+                </div>
+                <div class="input-7 input">
+                  <label for="country">Country<small class="small">Field cannot be empty</small></label>
+                  <input
+                    type="text"
+                    id="country"
+                    name="country"
+                    placeholder="United States"
+                  />
+                </div>
               </div>
             </div>
+            <div class="payment-details details">
+              <h3>payment details</h3>
+              <div class="payment">
+                <p>Payment Method</p>
+                <div class="label-div">
+                  <div class="choice-1 choice">
+                    <input type="radio" name="payment" id="input1" />
+                    <label id="label1" class="label label1" for="input1">e-Money</label>
+                  </div>
+                  <div class="choice-2 choice">
+                    <input type="radio" name="payment" id="input2" />
+                    <label id="label2" class="label label2" for="input2">Cash on Delivery</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-info details">
+              <div class="input-field-3 input-field">
+                <div class="input-8 input">
+                  <label for="eMoneyNum">e-Money Number<small class="small">Field cannot be empty</small></label>
+                  <input type="number" id="eMoneyNum" name="eMoneyNum" placeholder="238521993" />
+                </div>
+                <div class="input-9 input">
+                  <label for="eMoneyPIN">e-Money PIN<small class="small">Field cannot be empty</small></label>
+                  <input type="number" id="eMoneyPIN" name="eMoneyPIN" placeholder="6891" />
+                </div>
+              </div>
+            </div>
+            <div class="information">
+              <img src="./assets/checkout/icon-cash-on-delivery.svg" alt="Icon of a deal. delivery is getting money and in exchange gives a product which was ordered">
+              <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
+            </div>
           </div>
-          <div class="information">
-            <img src="./assets/checkout/icon-cash-on-delivery.svg" alt="Icon of a deal. delivery is getting money and in exchange gives a product which was ordered">
-            <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled.</p>
-          </div>
-        </div>
+        </form>
         <div class="form-bottom">
           <h2>summary</h2>
           <div class="product-list"></div>
@@ -229,9 +231,9 @@
               <p class="pay-amount">$ 0</p>              
             </div>
           </div>
-          <button type="submit">CONTINUE & PAY</button>
+          <button type="submit" class="submit-button">CONTINUE & PAY</button>
         </div>
-      </form>
+      </div>
     </main>
     <footer>
       <div class="footer-flex-top">
@@ -265,17 +267,35 @@
       </div>
     </footer>
     <div id="overlay">
-      <div class="products">  
-      <div class="number-of-products">
-        <h2 class="all_quantity">Cart (0)</h2>
-        <p id="remove-all">Remove all</button>
+      <div class="products">
+        <div class="number-of-products">
+          <h2 class="all_quantity">Cart (0)</h2>
+          <p id="remove-all">Remove all</button>
+        </div>
+        <div class="item-list"></div>
+        <div class="total">
+          <p>Total</p>
+          <p class="total_price">$ 0</p>
+        </div>
+        <a href="./checkout.html"><button class="checkout">checkout</button></a>
       </div>
-      <div class="item-list"></div>
-      <div class="total">
-        <p>Total</p>
-        <p class="total_price">$ 0</p>
+      <div class="thank_you_note">
+        <img src="./assets/checkout/icon-order-confirmation.svg" alt="Order confirmation icon">
+        <h1>thank you<br>for your order</h1>
+        <p>You will receive an email confirmation shortly.</p>
+        <div class="itemsInfo">
+          <div class="itemsListed">
+            <div class="listed"></div>
+            <div class="border-div"></div>
+            <div class="divForP"><p onclick="doSomething()" class="someP">and 0 other item(s)</p></div>
+          </div>
+          <div class="itemsPrice">
+            <p>grand total</p>
+            <h3 class="grandTotal">$ 0</h3>
+          </div>
+        </div>
+        <a href="./index.html"><button class="back-to-home">back to home</button></a>
       </div>
-      <a href="./checkout.html"><button class="checkout">checkout</button></a>
     </div>
   </body>
 </html>

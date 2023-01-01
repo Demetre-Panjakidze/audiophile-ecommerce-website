@@ -6,6 +6,9 @@ const main_div = document.getElementById("overlay");
 const mini_increase = document.getElementById("mini-plus");
 const mini_decrease = document.getElementById("mini-minus");
 const mini_result = document.getElementById("product_amount");
+const product_submit = document.getElementsByClassName("submit-button")[0];
+const back_to_home = document.getElementsByClassName("back-to-home")[0];
+const thank_you_note = document.getElementsByClassName("thank_you_note")[0];
 
 cart_icon?.addEventListener("click", () => {
   turned_on();
@@ -27,18 +30,29 @@ cart_icon?.addEventListener("click", () => {
   renderProducts();
 });
 
-main_div?.addEventListener("click", () => {
-  turned_off();
+product_submit?.addEventListener("click", () => {
+  submit_turned_on();
+  product_list.style.display = "none";
+  localStorage.clear();
+  products_list.innerHTML = "";
+  total_products.innerHTML = "Cart (0)";
+  total_pasi.innerHTML = "$ 0";
 });
 
-document
-  .getElementsByClassName("products")[0]
-  ?.addEventListener("click", (e) => {
+main_div.addEventListener("click", () => {
+  turned_off();
+  submit_turned_off();
+});
+
+[product_list, thank_you_note].forEach((x) => {
+  x?.addEventListener("click", (e) => {
     e.stopPropagation();
   });
+});
 
 function turned_on() {
   main_div.style.display = "block";
+  product_list.style.display = "block";
   main_div.style.cursor = "default";
   document.body.style.overflow = "hidden";
 }
@@ -47,6 +61,21 @@ function turned_off() {
   main_div.style.display = "none";
   document.body.style.overflow = "visible";
 }
+
+function submit_turned_on() {
+  main_div.style.display = "block";
+  thank_you_note.style.display = "block";
+  main_div.style.cursor = "default";
+  document.body.style.overflow = "hidden";
+}
+
+function submit_turned_off() {
+  main_div.style.display = "none";
+  thank_you_note.style.display = "none";
+  document.body.style.overflow = "visible";
+}
+
+//--------------------------------------------
 
 function renderProducts() {
   if (localStorage.getItem("products")) {

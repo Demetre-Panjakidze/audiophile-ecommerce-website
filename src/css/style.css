@@ -181,7 +181,8 @@ body main .section-1 a button {
   border: none;
   cursor: pointer;
 }
-body main .section-1 a button:hover {
+body main .section-1 a button:hover,
+body main .section-1 a button:active {
   background-color: #fbaf85;
 }
 @media (min-width: 768px) {
