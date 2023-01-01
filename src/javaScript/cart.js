@@ -49,10 +49,9 @@ cart_icon?.addEventListener("click", () => {
           storage.forEach((x) => {
             if (x["productName"] === product_name) {
               x["quantity"]++;
-              localStorage.setItem('products', JSON.stringify(storage));
+              localStorage.setItem("products", JSON.stringify(storage));
             }
           });
-
         });
       document
         .querySelector(`.minus-${product_name}`)
@@ -68,7 +67,14 @@ cart_icon?.addEventListener("click", () => {
           storage.forEach((x) => {
             if (x["productName"] === product_name) {
               x["quantity"]--;
-              localStorage.setItem('products', JSON.stringify(storage));
+              if (mini_amount.innerHTML <= 0) {
+                storage.splice(
+                  storage.findIndex(
+                    (obj) => obj["productName"] === product_name
+                  )
+                );
+              }
+              localStorage.setItem("products", JSON.stringify(storage));
             }
           });
         });
