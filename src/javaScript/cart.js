@@ -9,6 +9,8 @@ const mini_result = document.getElementById("product_amount");
 const product_submit = document.getElementsByClassName("submit-button")[0];
 const back_to_home = document.getElementsByClassName("back-to-home")[0];
 const thank_you_note = document.getElementsByClassName("thank_you_note")[0];
+const amount_in_overall = document.getElementsByClassName("all_quantity")[0];
+const price_in_overall = document.getElementsByClassName("total_price")[0];
 
 cart_icon?.addEventListener("click", () => {
   turned_on();
@@ -21,13 +23,62 @@ cart_icon?.addEventListener("click", () => {
     product_price += +info.price.replace(",", "") * +info.quantity;
   });
 
-  document.getElementsByClassName(
-    "total_price"
-  )[0].innerHTML = `$ ${product_price.toLocaleString()}`;
-  document.getElementsByClassName(
-    "all_quantity"
-  )[0].innerHTML = `Cart (${product_num})`;
+  price_in_overall.innerHTML = `$ ${product_price.toLocaleString()}`;
+  amount_in_overall.innerHTML = `Cart (${product_num})`;
   renderProducts();
+
+  if (localStorage.getItem("products")) {
+    const storage = JSON.parse(localStorage.getItem("products"));
+    function mini_change(product_name) {
+      let mini_container = document.querySelector(`.product-${product_name}`);
+      let mini_amount = document.querySelector(`.amount-${product_name}`);
+      let mini_price = document
+        .querySelector(`.price-${product_name}`)
+        .innerHTML.split(" ")[1]
+        .replace(",", "");
+
+      document
+        .querySelector(`.plus-${product_name}`)
+        .addEventListener("click", () => {
+          mini_amount.innerHTML++;
+          product_num++;
+          amount_in_overall.innerHTML = `Cart (${product_num})`;
+          //----
+          product_price += +mini_price;
+          price_in_overall.innerHTML = `$ ${product_price.toLocaleString()}`;
+          storage.forEach((x) => {
+            if (x["productName"] === product_name) {
+              x["quantity"]++;
+              localStorage.setItem('products', JSON.stringify(storage));
+            }
+          });
+
+        });
+      document
+        .querySelector(`.minus-${product_name}`)
+        .addEventListener("click", () => {
+          mini_amount.innerHTML--;
+          product_num--;
+          amount_in_overall.innerHTML = `Cart (${product_num})`;
+          if (mini_amount.innerHTML <= 0) {
+            mini_container.remove();
+          }
+          product_price -= +mini_price;
+          price_in_overall.innerHTML = `$ ${product_price.toLocaleString()}`;
+          storage.forEach((x) => {
+            if (x["productName"] === product_name) {
+              x["quantity"]--;
+              localStorage.setItem('products', JSON.stringify(storage));
+            }
+          });
+        });
+    }
+  }
+
+  ["YX1", "XX99_MK_II", "XX99_MK_I", "ZX7", "ZX9", "XX59"].forEach((x) => {
+    mini_change(x);
+  });
+  mini_change("XX59");
 });
 
 product_submit?.addEventListener("click", () => {
@@ -85,7 +136,7 @@ function renderProducts() {
     html = "";
     for (let i = 0; i < products.length; i++) {
       html += `
-<div class="product">
+<div class="product product-${products[i].productName}">
   <div class="product-info">
     <div class="product-img">
     <img height="64px" width="64px" src="/src/assets/cart/${getPhotoUrl(
@@ -98,17 +149,20 @@ function renderProducts() {
           ? products[i].productName.replace(/_/g, " ")
           : products[i].productName
       }</div>
-      <div class="product-price">$ ${products[i].price}</div> 
+      <div class="product-price price-${products[i].productName}">$ ${
+        products[i].price
+      }</div> 
     </div>
   </div>
   <div class="mini-increase-decrease">
-    <button id="mini-minus">-</button>
-    <p id="product-amount">${products[i].quantity}</p>
-    <button id="mini-plus">+</button>
+    <button id="mini-minus" class="minus-${products[i].productName}">-</button>
+    <p id="product-amount" class="amount-${products[i].productName}">${
+        products[i].quantity
+      }</p>
+    <button id="mini-plus" class="plus-${products[i].productName}">+</button>
   </div>
 </div> `;
     }
-
     container.insertAdjacentHTML("beforeend", html);
   }
 }
