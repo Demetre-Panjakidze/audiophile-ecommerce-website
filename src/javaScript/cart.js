@@ -81,10 +81,16 @@ cart_icon?.addEventListener("click", () => {
     }
   }
 
-  ["YX1", "XX99_MK_II", "XX99_MK_I", "ZX7", "ZX9", "XX59"].forEach((x) => {
-    mini_change(x);
-  });
+  mini_change("YX1");
   mini_change("XX59");
+  mini_change("XX99_MK_II");
+  mini_change("XX99_MK_I");
+  mini_change("ZX7");
+  mini_change("ZX9");
+
+  // ["YX1", "XX99_MK_II", "XX99_MK_I", "ZX7", "ZX9", "XX59"].forEach((x) => {
+  //   mini_change(x);
+  // });
 });
 
 product_submit?.addEventListener("click", () => {
