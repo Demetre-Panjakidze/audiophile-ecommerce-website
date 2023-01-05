@@ -34,6 +34,7 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  user-select: text;
 }
 /*
   6. Improve media defaults
@@ -45,7 +46,13 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  pointer-events: none;
+
+  &:active {
+    outline: none;
+  }
 }
+
 /*
   7. Remove built-in form typography styles
 */

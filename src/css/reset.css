@@ -36,6 +36,10 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
 }
 
 /*
@@ -48,6 +52,14 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  pointer-events: none;
+}
+img:active,
+picture:active,
+video:active,
+canvas:active,
+svg:active {
+  outline: none;
 }
 
 /*
