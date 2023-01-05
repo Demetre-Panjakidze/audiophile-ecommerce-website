@@ -393,11 +393,33 @@ body {
 
         .product-list {
           margin: 31px 0 0;
+
+          .product {
+            .product-info {
+              align-items: center;
+              .product-img {
+                img {
+                  border-radius: 8px;
+                }
+              }
+            }
+
+            .selected-amount {
+              // align-self: flex-start;
+              
+              p {
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 25px;
+                letter-spacing: 0px;
+              }
+            }
+          }
         }
 
         .pay-amount {
           margin: 32px 0 0;
-          
+
           .pay {
             display: flex;
             justify-content: space-between;
@@ -970,7 +992,7 @@ body {
 // media for thank you note
 @media (min-width: 500px) {
   .thank_you_note {
-    left: calc(50% - 226px)
+    left: calc(50% - 226px);
   }
 }
 

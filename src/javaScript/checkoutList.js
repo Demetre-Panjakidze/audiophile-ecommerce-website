@@ -25,48 +25,10 @@ if (localStorage.getItem("products")) {
     }</div> 
   </div>
 </div>
-
+<div class="selected-amount">
+<p>x${storageItems[i].quantity}</p>
+</div>
 </div> `;
   }
 }
 
-
-/* 
-if (localStorage.getItem("products")) {
-    const products = JSON.parse(localStorage.getItem("products"));
-    const container = document.getElementsByClassName("item-list")[0];
-    container.innerHTML = "";
-    html = "";
-    for (let i = 0; i < products.length; i++) {
-      html += `
-<div class="product product-${products[i].productName}">
-  <div class="product-info">
-    <div class="product-img">
-    <img height="64px" width="64px" src="/src/assets/cart/${getPhotoUrl(
-      products[i].productName
-    )}"  >
-    </div>
-    <div class="product-name-and-price">
-      <div class="product-name">${
-        products[i].productName.includes("_")
-          ? products[i].productName.replace(/_/g, " ")
-          : products[i].productName
-      }</div>
-      <div class="product-price price-${products[i].productName}">$ ${
-        products[i].price
-      }</div> 
-    </div>
-  </div>
-  <div class="mini-increase-decrease">
-    <button id="mini-minus" class="minus-${products[i].productName}">-</button>
-    <p id="product-amount" class="amount-${products[i].productName}">${
-        products[i].quantity
-      }</p>
-    <button id="mini-plus" class="plus-${products[i].productName}">+</button>
-  </div>
-</div> `;
-    }
-    container.insertAdjacentHTML("beforeend", html);
-  }
-
-*/

@@ -319,6 +319,18 @@ body main .form-container .form-bottom h2 {
 body main .form-container .form-bottom .product-list {
   margin: 31px 0 0;
 }
+body main .form-container .form-bottom .product-list .product .product-info {
+  align-items: center;
+}
+body main .form-container .form-bottom .product-list .product .product-info .product-img img {
+  border-radius: 8px;
+}
+body main .form-container .form-bottom .product-list .product .selected-amount p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0px;
+}
 body main .form-container .form-bottom .pay-amount {
   margin: 32px 0 0;
 }
