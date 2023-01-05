@@ -16,8 +16,7 @@ cart_icon?.addEventListener("click", () => {
   turned_on();
   let product_num = 0;
   let product_price = 0;
-  const information_about_products = localStorage.getItem("products");
-  const parsedInfo = JSON.parse(information_about_products);
+  const parsedInfo = JSON.parse(localStorage.getItem("products"));
   parsedInfo?.forEach((info) => {
     product_num += +info.quantity;
     product_price += +info.price.replace(",", "") * +info.quantity;

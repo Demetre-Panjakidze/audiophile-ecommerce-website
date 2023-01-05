@@ -1,8 +1,7 @@
+const storageItems = JSON.parse(localStorage.getItem("products"));
+const showArea = document.getElementsByClassName("product-list")[0];
+
 if (localStorage.getItem("products")) {
-  const storageItems = JSON.parse(localStorage.getItem("products"));
-  const showArea = document.getElementsByClassName("product-list")[0];
-  console.log(storageItems);
-  console.log(showArea);
   showArea.innerHTML = "";
   html = "";
   for (let i = 0; i < storageItems.length; i++) {
@@ -32,3 +31,25 @@ if (localStorage.getItem("products")) {
   }
 }
 
+const total_p = document.getElementsByClassName("price-TOTAL")[0];
+const vat_p = document.getElementsByClassName("price-VAT")[0];
+const grand_p = document.getElementsByClassName("price-GRAND")[0];
+let products_num = 0;
+let products_price = 0;
+storageItems?.forEach((info) => {
+  products_num += +info.quantity;
+  products_price += +info.price.replace(",", "") * +info.quantity;
+});
+total_p.innerHTML = `$ ${products_price.toLocaleString()}`;
+vat_p.innerHTML = `$ ${Math.round(products_price * 0.2).toLocaleString()}`;
+grand_p.innerHTML = `$ ${(products_price + 50).toLocaleString()}`
+/* 
+  const parsedInfo = JSON.parse(localStorage.getItem("products"));
+  parsedInfo?.forEach((info) => {
+    product_num += +info.quantity;
+    product_price += +info.price.replace(",", "") * +info.quantity;
+  });
+
+  price_in_overall.innerHTML = `$ ${product_price.toLocaleString()}`;
+  amount_in_overall.innerHTML = `Cart (${product_num})`;
+*/
