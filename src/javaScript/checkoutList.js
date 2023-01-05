@@ -1,6 +1,6 @@
 const storageItems = JSON.parse(localStorage.getItem("products"));
 const showArea = document.getElementsByClassName("product-list")[0];
-
+const 
 if (localStorage.getItem("products")) {
   showArea.innerHTML = "";
   html = "";
