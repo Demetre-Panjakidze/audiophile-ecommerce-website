@@ -34,12 +34,12 @@ cart_icon?.addEventListener("click", () => {
       let mini_amount = document.querySelector(`.amount-${product_name}`);
       let mini_price = document
         .querySelector(`.price-${product_name}`)
-        .innerHTML.split(" ")[1]
+        ?.innerHTML?.split(" ")[1]
         .replace(",", "");
 
       document
         .querySelector(`.plus-${product_name}`)
-        .addEventListener("click", () => {
+        ?.addEventListener("click", () => {
           mini_amount.innerHTML++;
           product_num++;
           amount_in_overall.innerHTML = `Cart (${product_num})`;
@@ -54,7 +54,7 @@ cart_icon?.addEventListener("click", () => {
         });
       document
         .querySelector(`.minus-${product_name}`)
-        .addEventListener("click", () => {
+        ?.addEventListener("click", () => {
           mini_amount.innerHTML--;
           product_num--;
           amount_in_overall.innerHTML = `Cart (${product_num})`;
@@ -86,10 +86,6 @@ cart_icon?.addEventListener("click", () => {
   mini_change("XX99_MK_I");
   mini_change("ZX7");
   mini_change("ZX9");
-
-  // ["YX1", "XX99_MK_II", "XX99_MK_I", "ZX7", "ZX9", "XX59"].forEach((x) => {
-  //   mini_change(x);
-  // });
 });
 
 product_submit?.addEventListener("click", () => {
@@ -133,11 +129,9 @@ function submit_turned_on() {
 
 function submit_turned_off() {
   main_div.style.display = "none";
-  thank_you_note.style.display = "none";
+  if(thank_you_note) thank_you_note.style.display = "none";
   document.body.style.overflow = "visible";
 }
-
-//--------------------------------------------
 
 function renderProducts() {
   if (localStorage.getItem("products")) {
