@@ -86,4 +86,9 @@ submiting.addEventListener("click", () => {
   showArea.innerHTML = "";
   submiting.disabled = true;
   submiting.style.cursor = "default";
+  const forma = document.getElementsByClassName("form")[0];
+  const inputsField = Array.from(forma.querySelectorAll("input"));
+  inputsField.forEach((x) => {
+    x.value = "";
+  })
 });

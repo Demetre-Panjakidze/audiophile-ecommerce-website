@@ -233,7 +233,11 @@ body main .form-container form .form-top .details .payment .label-div .choice-2 
 }
 body main .form-container form .form-top .details .payment .label-div .choice-1 input:checked + label:before,
 body main .form-container form .form-top .details .payment .label-div .choice-2 input:checked + label:before {
-  background: #d87d4a;
+  background-color: #d87d4a;
+}
+body main .form-container form .form-top .details .payment .label-div .choice-1 input:checked + .choice-2,
+body main .form-container form .form-top .details .payment .label-div .choice-2 input:checked + .choice-2 {
+  border-radius: 1px solid lime;
 }
 body main .form-container form .form-top .details .payment .label-div .choice-2 {
   margin: 16px 0 0;

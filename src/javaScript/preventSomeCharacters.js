@@ -29,7 +29,6 @@ const choice2 = document.getElementsByClassName("choice")[1]; // the second choi
 const card_info_div = document.getElementsByClassName("card-info")[0]; // div from the first choice (choice1)
 const card_info = document.getElementsByClassName("information")[0]; // div from the second choice (choice2)
 
-
 choice1.addEventListener("click", () => {
   choice1.style.border = "1px solid #d87d4a";
   choice2.style.border = "1px solid #CFCFCF";
@@ -96,40 +95,40 @@ mailDiv.addEventListener("input", () => {
 
 //-------------------------------------------------------------------------------------------------------------------
 
+const form = document.getElementsByClassName("form")[0];
+const inputFields = form.querySelectorAll("input");
 const submit = document.getElementsByClassName("submit-button")[0];
-// submit.removeAttribute("disabled");
-submit.addEventListener("click", () => {
-  inputs.forEach((x) => {
-    const firstChildOfX = x.firstElementChild;
-    const lastChildOfX = x.lastElementChild;
-    const message = firstChildOfX.firstElementChild;
 
-    if (lastChildOfX.value == "") {
-      firstChildOfX.style.color = "#cd2c2c";
-      lastChildOfX.style.border = "2px solid #cd2c2c";
-      message.style.display = "block";
-      // submit.disabled = true;
+function checkInputFields() {
+  let isValid = true;
+
+  for (let i = 0; i < inputFields.length; i++) {
+    if (inputFields[i].value.trim() === "") {
+      isValid = false;
+      break;
     }
+  }
 
-    if (lastChildOfX.value !== "") {
-      firstChildOfX.style.color = "#000";
-      lastChildOfX.style.border = "2px solid #CFCFCF";
-      message.style.display = "none";
-      // submit.removeAttribute("disabled");
+  submit.disabled = !isValid;
+}
+
+function checkInputFieldsMini() {
+  let isValid = true;
+
+  for (let i = 0; i < inputFields.length; i++) {
+    if (i !== 8 && i !== 9 && inputFields[i].value.trim() === '') {
+      isValid = false;
+      break;
     }
-  });
+  }
 
-  // mailDiv.addEventListener("input", () => {
-  //   badMessage.textContent = "Field cannot be empty";
-  //   submit.removeAttribute("disabled");
+  submit.disabled = !isValid;
+}
 
-  //   if (!mailInput.checkValidity()) {
-  //     badMessage.textContent = "Wrong format";
-  //     mailLabel.style.color = "#cd2c2c";
-  //     mailInput.style.border = "2px solid #cd2c2c";
-  //     badMessage.style.display = "block";
-  //     submit.disabled = true;
-  //   }
-  // });
-});
+checkInputFields();
 
+if (card_info_div.style.display === "none") {
+  checkInputFieldsMini();
+}
+
+form.addEventListener('input', checkInputFields);

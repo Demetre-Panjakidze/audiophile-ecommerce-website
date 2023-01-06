@@ -288,7 +288,16 @@ body {
                     cursor: pointer;
 
                     &:checked + label:before {
-                      background: #d87d4a;
+                      background-color: $dark_brown;
+                    }
+
+                    &:checked + .choice-2 {
+                      border-radius: 1px solid lime;
+                      // label {
+                      //   &:before {
+                      //     background-color: #cd2c2c;
+                      //   }
+                      // }
                     }
                   }
                 }
