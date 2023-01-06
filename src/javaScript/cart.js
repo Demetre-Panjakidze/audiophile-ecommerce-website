@@ -28,6 +28,7 @@ cart_icon?.addEventListener("click", () => {
 
   if (localStorage.getItem("products")) {
     const storage = JSON.parse(localStorage.getItem("products"));
+
     function mini_change(product_name) {
       let mini_container = document.querySelector(`.product-${product_name}`);
       let mini_amount = document.querySelector(`.amount-${product_name}`);
@@ -42,7 +43,6 @@ cart_icon?.addEventListener("click", () => {
           mini_amount.innerHTML++;
           product_num++;
           amount_in_overall.innerHTML = `Cart (${product_num})`;
-          //----
           product_price += +mini_price;
           price_in_overall.innerHTML = `$ ${product_price.toLocaleString()}`;
           storage.forEach((x) => {
