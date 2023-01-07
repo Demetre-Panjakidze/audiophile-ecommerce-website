@@ -183,12 +183,12 @@
                 <p>Payment Method</p>
                 <div class="label-div">
                   <div class="choice-1 choice">
-                    <input type="radio" name="payment" id="input1" />
-                    <label id="label1" class="label label1" for="input1">e-Money</label>
+                    <input type="radio" name="payment" id="input1" checked="true" />
+                    <label id="label1" class="label label1" for="input1" style="user-select:none">e-Money</label>
                   </div>
                   <div class="choice-2 choice">
                     <input type="radio" name="payment" id="input2" />
-                    <label id="label2" class="label label2" for="input2">Cash on Delivery</label>
+                    <label id="label2" class="label label2" for="input2" style="user-select:none">Cash on Delivery</label>
                   </div>
                 </div>
               </div>
@@ -232,7 +232,9 @@
               <p class="price-of-product price-GRAND">$ 0</p>              
             </div>
           </div>
-          <button type="submit" class="submit-button">CONTINUE & PAY</button>
+          <div class="submitDiv">
+            <button type="submit" class="submit-button">CONTINUE & PAY</button>
+          </div>
         </div>
       </div>
     </main>

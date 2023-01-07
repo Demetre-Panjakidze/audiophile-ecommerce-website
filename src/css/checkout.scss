@@ -290,15 +290,6 @@ body {
                     &:checked + label:before {
                       background-color: $dark_brown;
                     }
-
-                    &:checked + .choice-2 {
-                      border-radius: 1px solid lime;
-                      // label {
-                      //   &:before {
-                      //     background-color: #cd2c2c;
-                      //   }
-                      // }
-                    }
                   }
                 }
 

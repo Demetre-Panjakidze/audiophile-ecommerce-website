@@ -79,6 +79,8 @@ if (localStorage.getItem("products")) {
 }
 
 const submiting = document.getElementsByClassName("submit-button")[0];
+const choiceDiv1 = document.getElementsByClassName("choice")[0]; // the first choice
+const choiceDiv2 = document.getElementsByClassName("choice")[1]; // the second choice
 submiting.addEventListener("click", () => {
   [total_p, vat_p, grand_p, shipping_p].forEach((x) => {
     x.innerHTML = "$ 0";
@@ -89,6 +91,15 @@ submiting.addEventListener("click", () => {
   const forma = document.getElementsByClassName("form")[0];
   const inputsField = Array.from(forma.querySelectorAll("input"));
   inputsField.forEach((x) => {
-    x.value = "";
-  })
+    console.log(x);
+    x.readOnly = true;
+    [choiceDiv1, choiceDiv2].forEach((x) => {
+      x.style.pointerEvents = "none";
+    })
+  });
 });
+
+const submitingDiv = document.getElementsByClassName("submitDiv")[0];
+submitingDiv.addEventListener("click", () => {
+  console.log("hi");
+})

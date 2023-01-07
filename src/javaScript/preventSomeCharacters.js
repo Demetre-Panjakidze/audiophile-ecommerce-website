@@ -1,3 +1,4 @@
+const submit = document.getElementsByClassName("submit-button")[0];
 const zipNum = document.getElementById("zip");
 const eMoneyNum = document.getElementById("eMoneyNum");
 const eMoneyPIN = document.getElementById("eMoneyPIN");
@@ -20,14 +21,15 @@ phoneInput.addEventListener("input", function (event) {
 
 //---------------------------------------------------------------------------------------------------------------------------
 
-const input1 = document.getElementById("input1"); // e-money input 1
-const input2 = document.getElementById("input2"); // e-money input 2
 const label1 = document.getElementById("label1"); // e-money label 1
 const label2 = document.getElementById("label2"); // e-money label 2
 const choice1 = document.getElementsByClassName("choice")[0]; // the first choice
 const choice2 = document.getElementsByClassName("choice")[1]; // the second choice
 const card_info_div = document.getElementsByClassName("card-info")[0]; // div from the first choice (choice1)
 const card_info = document.getElementsByClassName("information")[0]; // div from the second choice (choice2)
+
+choice1.style.border = "1px solid #d87d4a";
+card_info_div.style.display = "block";
 
 choice1.addEventListener("click", () => {
   choice1.style.border = "1px solid #d87d4a";
@@ -97,38 +99,37 @@ mailDiv.addEventListener("input", () => {
 
 const form = document.getElementsByClassName("form")[0];
 const inputFields = form.querySelectorAll("input");
-const submit = document.getElementsByClassName("submit-button")[0];
 
 function checkInputFields() {
   let isValid = true;
-
   for (let i = 0; i < inputFields.length; i++) {
     if (inputFields[i].value.trim() === "") {
       isValid = false;
       break;
     }
   }
-
   submit.disabled = !isValid;
 }
 
 function checkInputFieldsMini() {
   let isValid = true;
-
   for (let i = 0; i < inputFields.length; i++) {
-    if (i !== 8 && i !== 9 && inputFields[i].value.trim() === '') {
+    if (i !== 8 && i !== 9 && inputFields[i].value.trim() === "") {
       isValid = false;
       break;
     }
   }
-
   submit.disabled = !isValid;
 }
 
 checkInputFields();
+form.addEventListener("input", checkInputFields);
+submit.addEventListener("click", () => {
+  console.log("hi");
+});
 
-if (card_info_div.style.display === "none") {
-  checkInputFieldsMini();
-}
-
-form.addEventListener('input', checkInputFields);
+document.addEventListener("click", function (event) {
+  if (submit.contains(event.target)) {
+    console.log("hi");
+  }
+});
