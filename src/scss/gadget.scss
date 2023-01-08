@@ -3,19 +3,21 @@
 @import "./abstracts/colors";
 @import "./abstracts/mixins";
 @import "./layout/footer";
+@import "./layout/cart";
+@import "./components/buttons";
 
 body {
   header {
     .header-div {
       background-color: $almost_black;
-      border-bottom: 1px solid $white;
-      padding: 32px 24px;
+      border-bottom: 0.1rem solid $white;
+      padding: 3.2rem 2.4rem;
       display: flex;
       justify-content: space-between;
 
       .header-left-part {
         display: flex;
-        gap: 60px;
+        gap: 6rem;
 
         a {
           button {
@@ -49,14 +51,12 @@ body {
     // media for header div
     @media (min-width: 768px) {
       .header-div {
-        padding: 37px 40px 32px;
+        padding: 3.7rem 4rem 3.2rem;
       }
     }
 
     @media (min-width: 1000px) {
       .header-div {
-        // padding: 32px 165px 36px;
-
         .header-left-part {
           .hamburger-menu {
             display: none;
@@ -65,16 +65,13 @@ body {
 
         .header-links {
           display: flex;
-          gap: 34px;
+          gap: 3.4rem;
 
           a {
             text-transform: uppercase;
             text-decoration: none;
             color: $white;
-            font-size: 13px;
-            font-weight: 700;
-            line-height: 25px;
-            letter-spacing: 2px;
+            @include fontStyles(1.3rem, 700, 2.5rem, 0.2rem);
           }
         }
       }
@@ -82,23 +79,23 @@ body {
 
     @media (min-width: 1440px) {
       .header-div {
-        padding: 32px 165px 36px;
+        padding: 3.2rem 16.5rem 3.6rem;
       }
     }
 
     // hidden div
     .hidden-div {
-      padding: 84px 24px 35px;
+      padding: 8.4rem 2.4rem 3.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 68px;
+      gap: 6.8rem;
       display: none;
 
       .div {
         width: 100%;
-        height: 165px;
-        border-radius: 8px;
+        height: 16.5rem;
+        border-radius: 0.8rem;
         background-color: $gray_white;
         text-align: center;
         display: flex;
@@ -106,52 +103,46 @@ body {
         align-items: center;
 
         .img-div {
-          width: 138px;
-          height: 88px;
+          width: 13.8rem;
+          height: 8.8rem;
 
           .accessory-img {
             position: relative;
-            top: -40px;
+            top: -4rem;
           }
         }
 
         .img-div-3 {
-          width: 165px;
+          width: 16.5rem;
         }
 
         p {
-          font-size: 15px;
-          font-weight: 900;
-          line-height: 20px;
-          letter-spacing: 1.0714285373687744px;
+          @include fontStyles(1.5rem, 900, 2rem, 0.107rem);
           text-transform: uppercase;
         }
 
         a {
-          margin: 17px 0 0;
+          margin: 1.7rem 0 0;
           display: flex;
           align-items: center;
-          gap: 13.32px;
+          gap: 1.33rem;
           text-decoration: none;
 
           p {
             color: $black;
             text-transform: uppercase;
-            font-size: 13px;
-            font-weight: 500;
-            line-height: 18px;
-            letter-spacing: 1px;
+            @include fontStyles(1.3rem, 500, 1.8rem, 0.1rem);
           }
 
           img {
-            width: 9px;
-            height: 14px;
+            width: 0.9rem;
+            height: 1.4rem;
           }
-        }
 
-        a:hover {
-          p {
-            color: $dark_brown;
+          &:hover {
+            p {
+              color: $dark_brown;
+            }
           }
         }
       }
@@ -160,13 +151,13 @@ body {
     // media for hidden div
     @media (min-width: 550px) {
       .hidden-div {
-        padding: 108px 40px 67px;
+        padding: 10.8rem 4rem 6.7rem;
         flex-direction: row;
         justify-content: center;
-        gap: 10px;
+        gap: 1rem;
 
         .div {
-          max-width: 350px;
+          max-width: 35rem;
         }
       }
     }
@@ -182,56 +173,50 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 32px 0;
+      padding: 3.2rem 0;
 
       h1 {
         color: $white;
         text-transform: uppercase;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 38px;
-        letter-spacing: 2px;
+        @include fontStyles(2.8rem, 700, 3.8rem, 0.2rem);
       }
     }
 
     // media for section 1
     @media (min-width: 768px) {
       .section-1 {
-        padding-block: 105px 97px;
+        padding-block: 10.5rem 9.7rem;
 
         h1 {
-          font-size: 40px;
-          font-weight: 700;
-          line-height: 44px;
-          letter-spacing: 1.4285714626312256px;
+          @include fontStyles(4rem, 700, 4.4rem, 0.142rem);
         }
       }
     }
 
     @media (min-width: 1440px) {
       .section-1 {
-        padding: 98px 0;
+        padding: 9.8rem 0;
       }
     }
 
     // section 2
     .section-2 {
-      padding: 64px 24px 0;
+      padding: 6.4rem 2.4rem 0;
       //flex
       display: flex;
       flex-direction: column;
-      gap: 120px;
+      gap: 12rem;
 
       .product {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 32px;
+        gap: 3.2rem;
 
         .product-img {
           picture {
             img {
-              border-radius: 8px;
+              border-radius: 0.8rem;
             }
           }
         }
@@ -240,44 +225,32 @@ body {
           text-align: center;
 
           h3 {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 19px;
-            letter-spacing: 10px;
+            @include fontStyles(1.4rem, 400, 1.9rem, 1rem);
             color: $dark_brown;
             text-transform: uppercase;
-            margin: 0 0 24px;
+            margin: 0 0 2.4rem;
           }
 
           h1 {
             text-transform: uppercase;
-            font-size: 28px;
-            font-weight: 700;
-            line-height: 38px;
-            letter-spacing: 1px;
+            @include fontStyles(2.8rem, 700, 3.8rem, 0.1rem);
           }
 
           p {
-            font-size: 15px;
-            font-weight: 500;
-            line-height: 25px;
-            letter-spacing: 0px;
-            margin: 24px 0 0;
+            @include fontStyles(1.5rem, 500, 2.5rem, 0);
+            margin: 2.4rem 0 0;
           }
 
           a {
             button {
-              width: 160px;
-              height: 48px;
+              width: 16rem;
+              height: 4.8rem;
               background-color: $dark_brown;
               color: $white;
-              font-size: 13px;
-              font-weight: 700;
-              line-height: 18px;
-              letter-spacing: 1px;
+              @include fontStyles(1.3rem, 700, 1.8rem, 0.1rem);
               border: none;
               cursor: pointer;
-              margin: 24px 0 0;
+              margin: 2.4rem 0 0;
             }
 
             button:hover {
@@ -291,27 +264,24 @@ body {
     // media for section 2
     @media (min-width: 768px) {
       .section-2 {
-        padding: 120px 40px 0;
+        padding: 12rem 4rem 0;
 
         .product {
-          gap: 52px;
+          gap: 5.2rem;
 
           .product-content {
             h3 {
-              margin: 0 0 16px;
+              margin: 0 0 1.6rem;
             }
 
             h1 {
               max-width: 572px;
-              font-size: 40px;
-              font-weight: 700;
-              line-height: 44px;
-              letter-spacing: 1.4285714626312256px;
+              @include fontStyles(4rem, 700, 4.4rem, 0.142rem);
             }
 
             p {
-              max-width: 572px;
-              margin: 32px 0 0;
+              max-width: 57.2rem;
+              margin: 3.2rem 0 0;
             }
           }
         }
@@ -320,22 +290,22 @@ body {
 
     @media (min-width: 1100px) {
       .section-2 {
-        padding: 160px 165px 0;
-        gap: 160px;
+        padding: 16rem 16.5rem 0;
+        gap: 16rem;
 
         .product {
           flex-direction: row;
-          gap: 125px;
+          gap: 12.5rem;
 
           h3 {
-            margin: 0 0 16px;
+            margin: 0 0 1.6rem;
           }
 
           .product-content {
             text-align: left;
 
             h1 {
-              max-width: 445px;
+              max-width: 44.5rem;
             }
           }
         }
@@ -348,16 +318,16 @@ body {
 
     // section 3
     .section-3 {
-      padding: 92px 24px 0;
+      padding: 9.2rem 2.4rem 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 68px;
+      gap: 6.8rem;
 
       .div {
-        width: 327px;
-        height: 165px;
-        border-radius: 8px;
+        width: 32.7rem;
+        height: 16.5rem;
+        border-radius: 0.8rem;
         background-color: $gray_white;
         text-align: center;
         display: flex;
@@ -365,52 +335,46 @@ body {
         align-items: center;
 
         .img-div {
-          width: 138px;
-          height: 88px;
+          width: 13.8rem;
+          height: 8.8rem;
 
           .accessory-img {
             position: relative;
-            top: -40px;
+            top: -4rem;
           }
         }
 
         .img-div-3 {
-          width: 165px;
+          width: 16.5rem;
         }
 
         p {
-          font-size: 15px;
-          font-weight: 900;
-          line-height: 20px;
-          letter-spacing: 1.0714285373687744px;
+          @include fontStyles(1.5rem, 900, 2rem, 0.107rem);
           text-transform: uppercase;
         }
 
         a {
-          margin: 17px 0 0;
+          margin: 1.7rem 0 0;
           display: flex;
           align-items: center;
-          gap: 13.32px;
+          gap: 1.33rem;
           text-decoration: none;
 
           p {
             color: $black;
             text-transform: uppercase;
-            font-size: 13px;
-            font-weight: 500;
-            line-height: 18px;
-            letter-spacing: 1px;
+            @include fontStyles(1.3rem, 500, 1.8rem, 0.1rem);
           }
 
           img {
-            width: 9px;
-            height: 14px;
+            width: 0.9rem;
+            height: 1.4rem;
           }
-        }
 
-        a:hover {
-          p {
-            color: $dark_brown;
+          &:hover {
+            p {
+              color: $dark_brown;
+            }
           }
         }
       }
@@ -419,27 +383,27 @@ body {
     // media for section 3
     @media (min-width: 768px) {
       .section-3 {
-        padding: 101px 40px 0 39px;
+        padding: 10.1rem 4rem 0 3.9rem;
         flex-direction: row;
         justify-content: center;
-        gap: 10px;
+        gap: 1rem;
 
         .div {
-          max-width: 350px;
+          max-width: 35rem;
         }
       }
     }
 
     @media (min-width: 1440px) {
       .section-3 {
-        padding: 160px 165px 0 165px;
+        padding: 16rem 16.5rem 0 16.5rem;
         gap: 30px;
       }
     }
 
     // section 4
     .section-4 {
-      padding: 120px 24px 0;
+      padding: 12rem 2.4rem 0;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -448,18 +412,15 @@ body {
       picture {
         img {
           max-width: 100%;
-          border-radius: 8px;
+          border-radius: 0.8rem;
         }
       }
 
       .text-content {
         h2 {
-          margin: 40px 0 0;
+          margin: 4rem 0 0;
           text-transform: uppercase;
-          font-size: 28px;
-          font-weight: 700;
-          line-height: 38px;
-          letter-spacing: 1px;
+          @include fontStyles(2.8rem, 700, 3.8rem, 0.1rem);
 
           span {
             color: $dark_brown;
@@ -467,12 +428,9 @@ body {
         }
 
         p {
-          max-width: 573px;
-          margin: 32px 0 0;
-          font-size: 15px;
-          font-weight: 500;
-          line-height: 25px;
-          letter-spacing: 0px;
+          max-width: 57.3rem;
+          margin: 3.2rem 0 0;
+          @include fontStyles(1.5rem, 500, 2.5rem, 0);
         }
       }
     }
@@ -480,16 +438,13 @@ body {
     // media for section 4
     @media (min-width: 768px) {
       .section-4 {
-        padding: 120px 39px 0;
+        padding: 12rem 3.9rem 0;
 
         .text-content {
           h2 {
-            max-width: 573px;
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 44px;
-            letter-spacing: 1.4285714626312256px;
-            margin: 63px 0 0;
+            max-width: 57.3rem;
+            @include fontStyles(4rem, 700, 4.4rem, 0.142rem);
+            margin: 6.3rem 0 0;
           }
         }
       }
@@ -497,201 +452,18 @@ body {
 
     @media (min-width: 1440px) {
       .section-4 {
-        padding: 160px 165px 0;
+        padding: 16rem 16.5rem 0;
         flex-direction: row-reverse;
-        gap: 125px;
+        gap: 12.5rem;
         text-align: left;
 
         .text-content {
-          h2 {
-            max-width: 445px;
-          }
-
+          h2,
           p {
-            max-width: 445px;
+            max-width: 44.5rem;
           }
         }
       }
     }
-  }
-}
-
-.product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0 24px;
-
-  .product-info {
-    display: flex;
-    gap: 16px;
-
-    .product-name-and-price {
-      display: flex;
-      flex-direction: column;
-
-      .product-name {
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 25px;
-        letter-spacing: 0px;
-      }
-
-      .product-price {
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 25px;
-        letter-spacing: 0px;
-      }
-    }
-  }
-
-  .mini-increase-decrease {
-    width: 96px;
-    height: 32px;
-    padding: 0 11.5px;
-    background-color: $gray_white;
-    gap: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    button {
-      border: none;
-      cursor: pointer;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 18px;
-      letter-spacing: 1px;
-    }
-
-    button:hover,
-    button:active {
-      color: $dark_brown;
-    }
-
-    p {
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 18px;
-      letter-spacing: 1px;
-    }
-  }
-}
-
-#overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-}
-
-.products {
-  position: absolute;
-  top: 122.4px;
-  right: 24px;
-  left: 24px;
-  padding: 31px 28px;
-  max-width: 100%;
-  border-radius: 8px;
-  background-color: $white;
-  // width: 377px;
-
-  .number-of-products {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0 31px;
-
-    h2 {
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 25px;
-      letter-spacing: 1.2857142686843872px;
-    }
-
-    p {
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 25px;
-      letter-spacing: 0px;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    p:hover {
-      color: $dark_brown;
-    }
-  }
-
-  .total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 32px 0 0;
-
-    p {
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 25px;
-      letter-spacing: 0px;
-      text-transform: uppercase;
-    }
-
-    .price {
-      font-size: 18px;
-      font-weight: 700;
-    }
-  }
-
-  a {
-    button {
-      margin: 24px 0 0;
-      width: 100%;
-      height: 48px;
-      border: none;
-      cursor: pointer;
-      background-color: $dark_brown;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 18px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: $white;
-    }
-
-    button:hover {
-      background-color: $light_brown;
-    }
-  }
-}
-
-// media for that
-@media (min-width: 425px) {
-  .products {
-    width: 377px;
-    right: 0;
-    left: calc(100% - 377px - 24px);
-  }
-}
-
-@media (min-width: 768px) {
-  .products {
-    top: 127.4px;
-    left: calc(100% - 377px - 40px);
-  }
-}
-
-@media (min-width: 1440px) {
-  .products {
-    top: 126.4px;
-    left: calc(100% - 377px - 165px);
   }
 }

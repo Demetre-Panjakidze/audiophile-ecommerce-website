@@ -216,6 +216,170 @@ footer .footer-flex-bottom .social-links {
     bottom: 7.7rem;
   }
 }
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 2.4rem;
+}
+.product .product-info {
+  display: flex;
+  gap: 1.6rem;
+}
+.product .product-info .product-name-and-price {
+  display: flex;
+  flex-direction: column;
+}
+.product .product-info .product-name-and-price .product-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+}
+.product .product-info .product-name-and-price .product-price {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+}
+.product .mini-increase-decrease {
+  width: 9.6rem;
+  height: 3.2rem;
+  padding: 0 1.15rem;
+  background-color: #f1f1f1;
+  gap: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product .mini-increase-decrease button {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  cursor: pointer;
+}
+.product .mini-increase-decrease button:hover, .product .mini-increase-decrease button:active {
+  color: #d87d4a;
+}
+.product .mini-increase-decrease p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.products {
+  position: absolute;
+  top: 12.24rem;
+  right: 2.4rem;
+  left: 2.4rem;
+  padding: 3.1rem 2.8rem;
+  max-width: 100%;
+  border-radius: 0.8rem;
+  background-color: #fff;
+}
+.products .number-of-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 3.1rem;
+}
+.products .number-of-products h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.128rem;
+}
+.products .number-of-products p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.products .number-of-products p:hover {
+  color: #d87d4a;
+}
+.products .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3.2rem 0 0;
+}
+.products .total p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: 0rem;
+  text-transform: uppercase;
+}
+.products .total .price {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.products a button {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin: 2.4rem 0 0;
+  width: 100%;
+  height: 4.8rem;
+  border: none;
+  cursor: pointer;
+  background-color: #d87d4a;
+  text-transform: uppercase;
+  color: #fff;
+}
+.products a button:hover {
+  background-color: #fbaf85;
+}
+
+@media (min-width: 425px) {
+  .products {
+    width: 37.7rem;
+    right: 0;
+    left: calc(100% - 37.7rem - 2.4rem);
+  }
+}
+@media (min-width: 768px) {
+  .products {
+    top: 12.74rem;
+    left: calc(100% - 37.7rem - 4rem);
+  }
+}
+@media (min-width: 1440px) {
+  .products {
+    top: 12.64rem;
+    left: calc(100% - 37.7rem - 16.5rem);
+  }
+}
 body header .header-div {
   background-color: #101010;
   border-bottom: 0.1rem solid #fff;
@@ -806,163 +970,6 @@ body main .section-4 .text-content p {
   }
   body main .section-4 .text-content p {
     max-width: 44.5rem;
-  }
-}
-
-.product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0 2.4rem;
-}
-.product .product-info {
-  display: flex;
-  gap: 1.6rem;
-}
-.product .product-info .product-name-and-price {
-  display: flex;
-  flex-direction: column;
-}
-.product .product-info .product-name-and-price .product-name {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 2.5rem;
-  letter-spacing: 0rem;
-}
-.product .product-info .product-name-and-price .product-price {
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 2.5rem;
-  letter-spacing: 0rem;
-}
-.product .mini-increase-decrease {
-  width: 9.6rem;
-  height: 3.2rem;
-  padding: 0 1.15rem;
-  background-color: #f1f1f1;
-  gap: 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.product .mini-increase-decrease button {
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.8rem;
-  letter-spacing: 0.1rem;
-  border: none;
-  cursor: pointer;
-}
-.product .mini-increase-decrease button:hover,
-.product .mini-increase-decrease button:active {
-  color: #d87d4a;
-}
-.product .mini-increase-decrease p {
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.8rem;
-  letter-spacing: 0.1rem;
-}
-
-#overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-}
-
-.products {
-  position: absolute;
-  top: 12.24rem;
-  right: 2.4rem;
-  left: 2.4rem;
-  padding: 3.1rem 2.8rem;
-  max-width: 100%;
-  border-radius: 0.8rem;
-  background-color: #fff;
-}
-.products .number-of-products {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0 3.1rem;
-}
-.products .number-of-products h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 2.5rem;
-  letter-spacing: 0.128rem;
-}
-.products .number-of-products p {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2.5rem;
-  letter-spacing: 0rem;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.products .number-of-products p:hover {
-  color: #d87d4a;
-}
-.products .total {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3.2rem 0 0;
-}
-.products .total p {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2.5rem;
-  letter-spacing: 0rem;
-  text-transform: uppercase;
-}
-.products .total .price {
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-.products a button {
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.8rem;
-  letter-spacing: 0.1rem;
-  margin: 2.4rem 0 0;
-  width: 100%;
-  height: 4.8rem;
-  border: none;
-  cursor: pointer;
-  background-color: #d87d4a;
-  text-transform: uppercase;
-  color: #fff;
-}
-.products a button:hover {
-  background-color: #fbaf85;
-}
-
-@media (min-width: 425px) {
-  .products {
-    width: 37.7rem;
-    right: 0;
-    left: calc(100% - 37.7rem - 2.4rem);
-  }
-}
-@media (min-width: 768px) {
-  .products {
-    top: 12.74rem;
-    left: calc(100% - 37.7rem - 4rem);
-  }
-}
-@media (min-width: 1440px) {
-  .products {
-    top: 12.64rem;
-    left: calc(100% - 37.7rem - 16.5rem);
   }
 }
 

@@ -216,6 +216,170 @@ footer .footer-flex-bottom .social-links {
     bottom: 7.7rem;
   }
 }
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 2.4rem;
+}
+.product .product-info {
+  display: flex;
+  gap: 1.6rem;
+}
+.product .product-info .product-name-and-price {
+  display: flex;
+  flex-direction: column;
+}
+.product .product-info .product-name-and-price .product-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+}
+.product .product-info .product-name-and-price .product-price {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+}
+.product .mini-increase-decrease {
+  width: 9.6rem;
+  height: 3.2rem;
+  padding: 0 1.15rem;
+  background-color: #f1f1f1;
+  gap: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product .mini-increase-decrease button {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  cursor: pointer;
+}
+.product .mini-increase-decrease button:hover, .product .mini-increase-decrease button:active {
+  color: #d87d4a;
+}
+.product .mini-increase-decrease p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.products {
+  position: absolute;
+  top: 12.24rem;
+  right: 2.4rem;
+  left: 2.4rem;
+  padding: 3.1rem 2.8rem;
+  max-width: 100%;
+  border-radius: 0.8rem;
+  background-color: #fff;
+}
+.products .number-of-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 3.1rem;
+}
+.products .number-of-products h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.128rem;
+}
+.products .number-of-products p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.products .number-of-products p:hover {
+  color: #d87d4a;
+}
+.products .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3.2rem 0 0;
+}
+.products .total p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: 0rem;
+  text-transform: uppercase;
+}
+.products .total .price {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.products a button {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin: 2.4rem 0 0;
+  width: 100%;
+  height: 4.8rem;
+  border: none;
+  cursor: pointer;
+  background-color: #d87d4a;
+  text-transform: uppercase;
+  color: #fff;
+}
+.products a button:hover {
+  background-color: #fbaf85;
+}
+
+@media (min-width: 425px) {
+  .products {
+    width: 37.7rem;
+    right: 0;
+    left: calc(100% - 37.7rem - 2.4rem);
+  }
+}
+@media (min-width: 768px) {
+  .products {
+    top: 12.74rem;
+    left: calc(100% - 37.7rem - 4rem);
+  }
+}
+@media (min-width: 1440px) {
+  .products {
+    top: 12.64rem;
+    left: calc(100% - 37.7rem - 16.5rem);
+  }
+}
 body header .header-div {
   background-color: #101010;
   border-bottom: 0.1rem solid #fff;
@@ -257,35 +421,35 @@ body header .header-div .header-right-part button {
   }
   body header .header-div .header-links {
     display: flex;
-    gap: 34px;
+    gap: 3.4rem;
   }
   body header .header-div .header-links a {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 2px;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
   }
 }
 @media (min-width: 1440px) {
   body header .header-div {
-    padding: 32px 165px 36px;
+    padding: 3.2rem 16.5rem 3.6rem;
   }
 }
 body header .hidden-div {
-  padding: 84px 24px 35px;
+  padding: 8.4rem 2.4rem 3.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 68px;
+  gap: 6.8rem;
   display: none;
 }
 body header .hidden-div .div {
   width: 100%;
-  height: 165px;
-  border-radius: 8px;
+  height: 16.5rem;
+  border-radius: 0.8rem;
   background-color: #f1f1f1;
   text-align: center;
   display: flex;
@@ -293,54 +457,54 @@ body header .hidden-div .div {
   align-items: center;
 }
 body header .hidden-div .div .img-div {
-  width: 138px;
-  height: 88px;
+  width: 13.8rem;
+  height: 8.8rem;
 }
 body header .hidden-div .div .img-div .accessory-img {
   position: relative;
-  top: -40px;
+  top: -4rem;
 }
 body header .hidden-div .div .img-div-3 {
-  width: 165px;
+  width: 16.5rem;
 }
 body header .hidden-div .div p {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 900;
-  line-height: 20px;
-  letter-spacing: 1.0714285374px;
+  line-height: 2rem;
+  letter-spacing: 0.107rem;
   text-transform: uppercase;
 }
 body header .hidden-div .div a {
-  margin: 17px 0 0;
+  margin: 1.7rem 0 0;
   display: flex;
   align-items: center;
-  gap: 13.32px;
+  gap: 1.33rem;
   text-decoration: none;
 }
 body header .hidden-div .div a p {
   color: #000;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 1px;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
 }
 body header .hidden-div .div a img {
-  width: 9px;
-  height: 14px;
+  width: 0.9rem;
+  height: 1.4rem;
 }
 body header .hidden-div .div a:hover p {
   color: #d87d4a;
 }
 @media (min-width: 550px) {
   body header .hidden-div {
-    padding: 108px 40px 67px;
+    padding: 10.8rem 4rem 6.7rem;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 1rem;
   }
   body header .hidden-div .div {
-    max-width: 350px;
+    max-width: 35rem;
   }
 }
 body main {
@@ -348,367 +512,362 @@ body main {
 }
 body main .goBack {
   display: inline-block;
-  margin: 16px 0 0 24px;
+  margin: 1.6rem 0 0 2.4rem;
   text-decoration: none;
   color: #000;
 }
 body main .section-1 {
-  padding: 24px 24px 0;
+  padding: 2.4rem 2.4rem 0;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 3.2rem;
 }
 body main .section-1 .product-img picture img {
-  border-radius: 8px;
+  border-radius: 0.8rem;
   margin: 0 auto;
 }
 body main .section-1 .product-content h3 {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 10px;
+  line-height: 1.9rem;
+  letter-spacing: 1rem;
   color: #d87d4a;
   text-transform: uppercase;
 }
 body main .section-1 .product-content h1 {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 700;
-  line-height: 38px;
-  letter-spacing: 1px;
+  line-height: 3.8rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
-  margin: 24px 0 0;
+  margin: 2.4rem 0 0;
 }
 body main .section-1 .product-content .description {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0px;
-  margin: 24px 0 0;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+  margin: 2.4rem 0 0;
 }
 body main .section-1 .product-content .pricing {
-  margin: 24px 0 0;
+  margin: 2.4rem 0 0;
 }
 body main .section-1 .product-content .pricing .price {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 1.2857142687px;
+  line-height: 2.5rem;
+  letter-spacing: 0.128rem;
 }
 body main .section-1 .product-content .pricing .amount {
-  margin: 31px 0 0;
+  margin: 3.1rem 0 0;
   display: flex;
-  gap: 16px;
+  gap: 1.6rem;
 }
 body main .section-1 .product-content .pricing .amount .increase-decrease {
-  width: 120px;
-  height: 48px;
-  padding: 0 15.5px;
+  width: 12rem;
+  height: 4.8rem;
+  padding: 0 1.55rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
   background-color: #f1f1f1;
 }
 body main .section-1 .product-content .pricing .amount .increase-decrease button {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
   border: none;
   cursor: pointer;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 1px;
   background-color: inherit;
   color: #000;
 }
-body main .section-1 .product-content .pricing .amount .increase-decrease button:hover,
-body main .section-1 .product-content .pricing .amount .increase-decrease button:active {
+body main .section-1 .product-content .pricing .amount .increase-decrease button:hover, body main .section-1 .product-content .pricing .amount .increase-decrease button:active {
   color: #d87d4a;
   background-color: inherit;
 }
 body main .section-1 .product-content .pricing .amount .increase-decrease p {
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 1px;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
 }
 body main .section-1 .product-content .pricing .amount button {
-  width: 160px;
-  height: 48px;
+  width: 16rem;
+  height: 4.8rem;
   background-color: #d87d4a;
   color: #fff;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 1px;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
 }
-body main .section-1 .product-content .pricing .amount button:hover,
-body main .section-1 .product-content .pricing .amount button:active {
+body main .section-1 .product-content .pricing .amount button:hover, body main .section-1 .product-content .pricing .amount button:active {
   background-color: #fbaf85;
 }
 @media (min-width: 768px) {
   body main .goBack {
-    margin: 33px 0 0 40px;
+    margin: 3.3rem 0 0 4rem;
   }
   body main .section-1 {
-    padding: 24px 39px 0;
+    padding: 2.4rem 3.9rem 0;
     flex-direction: row;
     align-items: center;
-    gap: 69px;
+    gap: 6.9rem;
   }
   body main .section-1 .product-content h3 {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 8.571428299px;
+    line-height: 1.6rem;
+    letter-spacing: 0.857rem;
   }
   body main .section-1 .product-content h1 {
-    line-height: 32px;
+    line-height: 3.2rem;
   }
-  body main .section-1 .product-content .description {
-    margin: 32px 0 0;
-  }
+  body main .section-1 .product-content .description,
   body main .section-1 .product-content .pricing {
-    margin: 32px 0 0;
+    margin: 3.2rem 0 0;
   }
 }
 @media (min-width: 1440px) {
   body main .goBack {
-    margin: 79px 0 0 165px;
+    margin: 7.9rem 0 0 16.5rem;
   }
   body main .section-1 {
-    padding: 56px 165px 0;
-    gap: 124.5px;
+    padding: 5.6rem 16.5rem 0;
+    gap: 12.45rem;
   }
   body main .section-1 .product-content h3 {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 10px;
+    line-height: 1.9rem;
+    letter-spacing: 1rem;
   }
   body main .section-1 .product-content h1 {
-    margin: 16px 0 0;
-    font-size: 40px;
+    margin: 1.6rem 0 0;
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 44px;
-    letter-spacing: 1.4285714626px;
+    line-height: 4.4rem;
+    letter-spacing: 0.142rem;
   }
   body main .section-1 .product-content .pricing .amount {
-    margin: 47px 0 0;
+    margin: 4.7rem 0 0;
   }
 }
 body main .section-2 {
-  padding: 88px 24px 0;
+  padding: 8.8rem 2.4rem 0;
   display: flex;
   flex-direction: column;
-  gap: 88px;
+  gap: 8.8rem;
 }
 body main .section-2 .info-1 h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0.8571428657px;
+  line-height: 3.6rem;
+  letter-spacing: 0.085rem;
   text-transform: uppercase;
 }
 body main .section-2 .info-1 p {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0px;
-  margin: 24px 0 0;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+  margin: 2.4rem 0 0;
 }
 body main .section-2 .info-2 {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 2.4rem;
 }
 body main .section-2 .info-2 h2 {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0.8571428657px;
+  line-height: 3.6rem;
+  letter-spacing: 0.085rem;
 }
 body main .section-2 .info-2 .inner-info {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.8rem;
 }
 body main .section-2 .info-2 .inner-info p {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0px;
+  line-height: 2.5rem;
+  letter-spacing: 0;
 }
 body main .section-2 .info-2 .inner-info p span {
   font-weight: 700;
   color: #d87d4a;
-  margin: 0 24px 0 0;
+  margin: 0 2.4rem 0 0;
 }
 @media (min-width: 768px) {
   body main .section-2 {
-    padding: 120px 40px 0;
-    gap: 120px;
+    padding: 12rem 4rem 0;
+    gap: 12rem;
   }
   body main .section-2 .info-1 h2 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 1.1428571939px;
+    line-height: 3.6rem;
+    letter-spacing: 0.114rem;
   }
   body main .section-2 .info-1 .top-p {
-    margin: 32px 0 0;
+    margin: 3.2rem 0 0;
   }
   body main .section-2 .info-2 {
     flex-direction: row;
-    gap: 169px;
+    gap: 16.9rem;
   }
   body main .section-2 .info-2 h2 {
-    font-size: 32px;
-    letter-spacing: 1.1428571939px;
+    font-size: 3.2rem;
+    letter-spacing: 0.114rem;
   }
 }
 @media (min-width: 1440px) {
   body main .section-2 {
-    padding: 160px 165px 0;
-    gap: 125px;
+    padding: 16rem 16.5rem 0;
+    gap: 12.5rem;
     flex-direction: row;
   }
   body main .section-2 .info-1 {
-    max-width: 625px;
+    max-width: 62.5rem;
   }
   body main .section-2 .info-2 {
     flex-direction: column;
-    gap: 32px;
+    gap: 3.2rem;
   }
 }
 body main .section-3 {
-  padding: 88px 24px 0;
+  padding: 8.8rem 2.4rem 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
 }
 body main .section-3 .left {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
 }
 body main .section-3 .left .img picture img,
 body main .section-3 .right .img picture img {
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 @media (min-width: 768px) {
   body main .section-3 {
-    padding: 120px 39px 0;
+    padding: 12rem 3.9rem 0;
     flex-direction: row;
     justify-content: center;
-    gap: 18px;
+    gap: 1.8rem;
   }
   body main .section-3 .left {
-    gap: 20px;
+    gap: 2rem;
     justify-content: space-between;
   }
 }
 @media (min-width: 1440px) {
   body main .section-3 {
-    padding: 160px 165px 0;
+    padding: 16rem 16.5rem 0;
   }
 }
 body main .section-4 {
-  padding: 120px 24px 0;
+  padding: 12rem 2.4rem 0;
 }
 body main .section-4 h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0.8571428657px;
+  line-height: 3.6rem;
+  letter-spacing: 0.085rem;
   text-transform: uppercase;
   text-align: center;
 }
 body main .section-4 .sugestions {
-  margin: 40px 0 0;
+  margin: 4rem 0 0;
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 5.6rem;
 }
 body main .section-4 .sugestions .sugestion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 3.2rem;
 }
 body main .section-4 .sugestions .sugestion .sugestion-image picture img {
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 body main .section-4 .sugestions .sugestion .sugestion-content h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
-  line-height: 33px;
-  letter-spacing: 1.7142857313px;
+  line-height: 3.3rem;
+  letter-spacing: 0.171rem;
 }
 body main .section-4 .sugestions .sugestion .sugestion-content a {
   margin: 0;
 }
 body main .section-4 .sugestions .sugestion .sugestion-content a button {
-  margin: 28px 0 0;
-  width: 160px;
-  height: 48px;
+  margin: 2.8rem 0 0;
+  width: 16rem;
+  height: 4.8rem;
   background-color: #d87d4a;
   color: #fff;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 1px;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
   border: none;
   cursor: pointer;
 }
-body main .section-4 .sugestions .sugestion .sugestion-content a button:hover,
-body main .section-4 .sugestions .sugestion .sugestion-content a button:active {
+body main .section-4 .sugestions .sugestion .sugestion-content a button:hover, body main .section-4 .sugestions .sugestion .sugestion-content a button:active {
   background-color: #fbaf85;
 }
 @media (min-width: 768px) {
   body main .section-4 {
-    padding-inline: 39px;
+    padding-inline: 3.9rem;
   }
   body main .section-4 h2 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 1.1428571939px;
+    line-height: 3.6rem;
+    letter-spacing: 0.114rem;
   }
   body main .section-4 .sugestions {
-    margin: 56px 0 0;
+    margin: 5.6rem 0 0;
     flex-direction: row;
-    gap: 11px;
+    gap: 1.1rem;
   }
   body main .section-4 .sugestions .sugestion {
-    gap: 40px;
+    gap: 4rem;
   }
   body main .section-4 .sugestions .sugestion .sugestion-content a button {
-    margin: 32px 0 0;
+    margin: 3.2rem 0 0;
   }
 }
 @media (min-width: 1440px) {
   body main .section-4 {
-    padding: 160px 165px 0;
+    padding: 16rem 16.5rem 0;
   }
   body main .section-4 .sugestions {
-    margin: 64px 0 0;
-    gap: 30px;
+    margin: 6.4rem 0 0;
+    gap: 3rem;
   }
 }
 body main .section-5 {
-  padding: 120px 24px 0;
+  padding: 12rem 2.4rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 68px;
+  gap: 6.8rem;
 }
 body main .section-5 .div {
-  width: 327px;
-  height: 165px;
-  border-radius: 8px;
+  width: 32.7rem;
+  height: 16.5rem;
+  border-radius: 0.8rem;
   background-color: #f1f1f1;
   text-align: center;
   display: flex;
@@ -716,51 +875,51 @@ body main .section-5 .div {
   align-items: center;
 }
 body main .section-5 .div .img-div {
-  width: 138px;
-  height: 88px;
+  width: 13.8rem;
+  height: 8.8rem;
 }
 body main .section-5 .div .img-div .accessory-img {
   position: relative;
-  top: -40px;
+  top: -4rem;
 }
 body main .section-5 .div .img-div-3 {
-  width: 165px;
+  width: 16.5rem;
 }
 body main .section-5 .div p {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 900;
-  line-height: 20px;
-  letter-spacing: 1.0714285374px;
+  line-height: 2rem;
+  letter-spacing: 0.107rem;
   text-transform: uppercase;
 }
 body main .section-5 .div a {
-  margin: 17px 0 0;
+  margin: 1.7rem 0 0;
   display: flex;
   align-items: center;
-  gap: 13.32px;
+  gap: 1.33rem;
   text-decoration: none;
 }
 body main .section-5 .div a p {
   color: #000;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 1px;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
 }
 body main .section-5 .div a img {
-  width: 9px;
-  height: 14px;
+  width: 0.9rem;
+  height: 1.4rem;
 }
 body main .section-5 .div a:hover p {
   color: #d87d4a;
 }
 @media (min-width: 768px) {
   body main .section-5 {
-    padding-inline: 39px;
+    padding-inline: 3.9rem;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10px;
+    gap: 1rem;
   }
   body main .section-5 .div {
     width: 100%;
@@ -768,16 +927,16 @@ body main .section-5 .div a:hover p {
 }
 @media (min-width: 1200px) {
   body main .section-5 {
-    gap: 30px;
+    gap: 3rem;
   }
 }
 @media (min-width: 1440px) {
   body main .section-5 {
-    padding: 160px 165px 0 165px;
+    padding: 16rem 16.5rem 0 16.5rem;
   }
 }
 body main .section-6 {
-  padding: 120px 24px 0;
+  padding: 12rem 2.4rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -785,209 +944,49 @@ body main .section-6 {
 }
 body main .section-6 picture img {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 body main .section-6 .text-content h2 {
-  margin: 40px 0 0;
+  margin: 4rem 0 0;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: 700;
-  line-height: 38px;
-  letter-spacing: 1px;
+  line-height: 3.8rem;
+  letter-spacing: 0.1rem;
 }
 body main .section-6 .text-content h2 span {
   color: #d87d4a;
 }
 body main .section-6 .text-content p {
-  max-width: 573px;
-  margin: 32px 0 0;
-  font-size: 15px;
+  max-width: 57.3rem;
+  margin: 3.2rem 0 0;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0px;
+  line-height: 2.5rem;
+  letter-spacing: 0;
 }
 @media (min-width: 768px) {
   body main .section-6 {
-    padding: 120px 39px 0;
+    padding: 12rem 3.9rem 0;
   }
   body main .section-6 .text-content h2 {
-    max-width: 573px;
-    font-size: 40px;
+    max-width: 57.3rem;
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 44px;
-    letter-spacing: 1.4285714626px;
-    margin: 63px 0 0;
+    line-height: 4.4rem;
+    letter-spacing: 0.142rem;
+    margin: 6.3rem 0 0;
   }
 }
 @media (min-width: 1440px) {
   body main .section-6 {
-    padding: 160px 165px 0;
+    padding: 16rem 16.5rem 0;
     flex-direction: row-reverse;
-    gap: 125px;
+    gap: 12.5rem;
     text-align: left;
   }
-  body main .section-6 .text-content h2 {
-    max-width: 445px;
-  }
-  body main .section-6 .text-content p {
-    max-width: 445px;
-  }
-}
-
-.product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0 24px;
-}
-.product .product-info {
-  display: flex;
-  gap: 16px;
-}
-.product .product-info .product-name-and-price {
-  display: flex;
-  flex-direction: column;
-}
-.product .product-info .product-name-and-price .product-name {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 0px;
-}
-.product .product-info .product-name-and-price .product-price {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0px;
-}
-.product .mini-increase-decrease {
-  width: 96px;
-  height: 32px;
-  padding: 0 11.5px;
-  background-color: #f1f1f1;
-  gap: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.product .mini-increase-decrease button {
-  border: none;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 1px;
-}
-.product .mini-increase-decrease button:hover,
-.product .mini-increase-decrease button:active {
-  color: #d87d4a;
-}
-.product .mini-increase-decrease p {
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 1px;
-}
-
-#overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-}
-
-.products {
-  position: absolute;
-  top: 122.4px;
-  right: 24px;
-  left: 24px;
-  padding: 31px 28px;
-  max-width: 100%;
-  border-radius: 8px;
-  background-color: #fff;
-}
-.products .number-of-products {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0 31px;
-}
-.products .number-of-products h2 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: 1.2857142687px;
-}
-.products .number-of-products p {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0px;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.products .number-of-products p:hover {
-  color: #d87d4a;
-}
-.products .total {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 32px 0 0;
-}
-.products .total p {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 25px;
-  letter-spacing: 0px;
-  text-transform: uppercase;
-}
-.products .total .price {
-  font-size: 18px;
-  font-weight: 700;
-}
-.products a button {
-  margin: 24px 0 0;
-  width: 100%;
-  height: 48px;
-  border: none;
-  cursor: pointer;
-  background-color: #d87d4a;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #fff;
-}
-.products a button:hover {
-  background-color: #fbaf85;
-}
-
-@media (min-width: 425px) {
-  .products {
-    width: 377px;
-    right: 0;
-    left: calc(100% - 377px - 24px);
-  }
-}
-@media (min-width: 768px) {
-  .products {
-    top: 127.4px;
-    left: calc(100% - 377px - 40px);
-  }
-}
-@media (min-width: 1440px) {
-  .products {
-    top: 126.4px;
-    left: calc(100% - 377px - 165px);
+  body main .section-6 .text-content h2, body main .section-6 .text-content p {
+    max-width: 44.5rem;
   }
 }
 
