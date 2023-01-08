@@ -418,7 +418,7 @@ body main .form-container .form-bottom button:active {
     grid-template-columns: 1fr 1fr;
   }
   body main .form-container form .form-top .card-info,
-body main .form-container form .form-top .information {
+  body main .form-container form .form-top .information {
     margin: 24px 0 0;
   }
   body main .form-container form .form-top .card-info .input-field {
@@ -858,4 +858,6 @@ body footer .footer-flex-bottom .social-links {
   .thank_you_note a button {
     margin: 46px 0 0;
   }
-}/*# sourceMappingURL=checkout.css.map */
+}
+
+/*# sourceMappingURL=checkout.css.map */

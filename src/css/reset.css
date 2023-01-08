@@ -22,7 +22,8 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
@@ -36,10 +37,7 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
+  user-select: text;
 }
 
 /*
@@ -91,4 +89,6 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
-}/*# sourceMappingURL=reset.css.map */
+}
+
+/*# sourceMappingURL=reset.css.map */
