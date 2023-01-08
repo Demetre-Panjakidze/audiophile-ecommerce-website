@@ -1,0 +1,128 @@
+footer {
+  //margin and padding
+  margin: 120px 0 0;
+  padding: 52px 24px 38px;
+  // color
+  background-color: $black;
+  color: $white;
+  // flex
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  text-align: center;
+
+  .footer-flex-top {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    a {
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      a {
+        @include fontStyles(13px, 700, 25px, 2px);
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+          color: $dark_brown;
+        }
+      }
+    }
+  }
+
+  .big-p {
+    @include fontStyles(15px, 500, 25px, 0px);
+  }
+
+  .footer-flex-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+
+    .small-p {
+      @include fontStyles(15px, 700, 25px, 0px);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+  }
+}
+
+//media for footer
+@media (min-width: 768px) {
+  footer {
+    //margin and padding
+    margin: 96px 0 0;
+    padding: 60px 40px 46px 39px;
+    gap: 0;
+
+    .footer-flex-top {
+      gap: 32px;
+
+      a {
+        img {
+          margin: 0;
+        }
+      }
+
+      .footer-links {
+        flex-direction: row;
+        gap: 34px;
+      }
+    }
+
+    .big-p {
+      margin: 32px 0 0;
+      text-align: left;
+      max-width: 689px;
+    }
+
+    .footer-flex-bottom {
+      margin: 80px 0 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  footer {
+    //margin and padding
+    margin: 200px 0 0;
+    padding: 75px 165px 48px;
+
+    .footer-flex-top {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .big-p {
+      max-width: 540px;
+      margin: 36px 0 0;
+    }
+
+    .footer-flex-bottom {
+      margin: 56px 0 0;
+
+      .social-links {
+        position: relative;
+        bottom: 77px;
+      }
+    }
+  }
+}
+
