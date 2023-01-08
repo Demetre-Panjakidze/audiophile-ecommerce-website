@@ -8,14 +8,14 @@ body {
   header {
     .header-div {
       background-color: $almost_black;
-      border-bottom: 1px solid $white;
-      padding: 32px 24px;
+      border-bottom: 0.1rem solid $white;
+      padding: 3.2rem 2.4rem;
       display: flex;
       justify-content: space-between;
 
       .header-left-part {
         display: flex;
-        gap: 60px;
+        gap: 6rem;
 
         a {
           button {
@@ -49,14 +49,12 @@ body {
     // media for header div
     @media (min-width: 768px) {
       .header-div {
-        padding: 37px 40px 32px;
+        padding: 3.7rem 4rem 3.2rem;
       }
     }
 
     @media (min-width: 1000px) {
       .header-div {
-        // padding: 32px 165px 36px;
-
         .header-left-part {
           .hamburger-menu {
             display: none;
@@ -65,10 +63,10 @@ body {
 
         .header-links {
           display: flex;
-          gap: 34px;
+          gap: 3.4rem;
 
           a {
-            @include fontStyles(13px, 700, 25px, 2px);
+            @include fontStyles(1.3rem, 700, 2.5rem, 0.2rem);
             text-transform: uppercase;
             text-decoration: none;
             color: $white;
@@ -79,13 +77,13 @@ body {
 
     @media (min-width: 1440px) {
       .header-div {
-        padding: 32px 165px 36px;
+        padding: 3.2rem 16.5rem 3.6rem;
       }
     }
 
     // hidden div
     .hidden-div {
-      padding: 84px 24px 35px;
+      padding: 8.4rem 2.4rem 3.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -94,8 +92,8 @@ body {
 
       .div {
         width: 100%;
-        height: 165px;
-        border-radius: 8px;
+        height: 16.5rem;
+        border-radius: 0.8rem;
         background-color: $gray_white;
         text-align: center;
         display: flex;
@@ -103,40 +101,40 @@ body {
         align-items: center;
 
         .img-div {
-          width: 138px;
-          height: 88px;
+          width: 13.8rem;
+          height: 8.8rem;
 
           .accessory-img {
             position: relative;
-            top: -40px;
+            top: -4rem;
           }
         }
 
         .img-div-3 {
-          width: 165px;
+          width: 16.5rem;
         }
 
         p {
-          @include fontStyles(15px, 900, 20px, 1.071px);
+          @include fontStyles(1.5rem, 900, 2rem, 0.107rem);
           text-transform: uppercase;
         }
 
         a {
-          margin: 17px 0 0;
+          margin: 1.7rem 0 0;
           display: flex;
           align-items: center;
-          gap: 13.32px;
+          gap: 1.33rem;
           text-decoration: none;
 
           p {
-            @include fontStyles(13px, 500, 18px, 1px);
+            @include fontStyles(1.3rem, 500, 1.8rem, 0.1rem);
             color: $black;
             text-transform: uppercase;
           }
 
           img {
-            width: 9px;
-            height: 14px;
+            width: 0.9rem;
+            height: 1.4rem;
           }
         }
 
@@ -151,13 +149,13 @@ body {
     // media for hidden div
     @media (min-width: 550px) {
       .hidden-div {
-        padding: 108px 40px 67px;
+        padding: 10.8rem 4rem 6.7rem;
         flex-direction: row;
         justify-content: center;
-        gap: 10px;
+        gap: 1rem;
 
         .div {
-          max-width: 350px;
+          max-width: 35rem;
         }
       }
     }
@@ -168,7 +166,7 @@ body {
 
     // section 1
     .section-1 {
-      padding: 108px 24px 112px;
+      padding: 10.8rem 2.4rem 11.2rem;
       background-color: $another_black;
       display: flex;
       flex-direction: column;
@@ -179,37 +177,38 @@ body {
       background-position: center;
 
       h3 {
-        @include fontStyles(14px, 400, 19px, 10px);
+        @include fontStyles(1.4rem, 400, 1.9rem, 1rem);
         color: $white;
         text-transform: uppercase;
       }
 
       h1 {
-        @include fontStyles(36px, 700, 40px 1.285px);
+        @include fontStyles(3.6rem, 700, 4rem, 0.128rem);
         color: $white;
         margin: 16px 0 0;
       }
 
       p {
-        @include fontStyles(15px, 500, 25px, 0px);
+        @include fontStyles(1.5rem, 500, 2.5rem, 0rem);
         color: $white;
-        max-width: 328px;
-        margin: 24px 0 0;
+        max-width: 32.8rem;
+        margin: 2.4rem 0 0;
         text-align: center;
       }
 
       a {
         button {
-          @include fontStyles(13px, 700, 18px, 1px);
-          margin: 28px 0 0;
-          width: 160px;
-          height: 48px;
+          @include fontStyles(1.3rem, 700, 1.8rem, 0.1rem);
+          margin: 2.8rem 0 0;
+          width: 16rem;
+          height: 4.8rem;
           background-color: $dark_brown;
           color: $white;
           border: none;
           cursor: pointer;
 
-          &:hover, &:active {
+          &:hover,
+          &:active {
             background-color: $light_brown;
           }
         }
@@ -221,21 +220,21 @@ body {
       .section-1 {
         background-image: url(../assets/home/tablet/image-header.jpg);
         background-size: cover;
-        padding: 126px 195px 162px 194px;
+        padding: 12.6rem 19.5rem 16.2rem 19.4rem;
 
         h1 {
-          @include fontStyles(56px, 700, 58px 2px);
-          margin: 24px 0 0;
+          @include fontStyles(5.6rem, 700, 5.8rem, 0.2rem);
+          margin: 2.4rem 0 0;
         }
 
         p {
-          margin: 24px;
-          max-width: 349px;
+          margin: 2.4rem;
+          max-width: 34.9rem;
         }
 
         a {
           button {
-            margin: 40px 0 0;
+            margin: 4rem 0 0;
           }
         }
       }
@@ -246,14 +245,14 @@ body {
         background-image: url(../assets/home/desktop/image-hero.jpg);
         background-size: cover;
         display: block;
-        padding: 128px 0 158px 165px;
+        padding: 12.8rem 0 15.8rem 16.5rem;
 
         h1 {
           text-align: left;
         }
 
         p {
-          margin: 24px 0 0;
+          margin: 2.4rem 0 0;
           text-align: left;
         }
       }
@@ -261,16 +260,16 @@ body {
 
     // section 2
     .section-2 {
-      padding: 92px 24px 0;
+      padding: 9.2rem 2.4rem 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 68px;
+      gap: 6.8rem;
 
       .div {
-        width: 327px;
-        height: 165px;
-        border-radius: 8px;
+        width: 32.7rem;
+        height: 16.5rem;
+        border-radius: 0.8rem;
         background-color: $gray_white;
         text-align: center;
         display: flex;
@@ -278,40 +277,40 @@ body {
         align-items: center;
 
         .img-div {
-          width: 138px;
-          height: 88px;
+          width: 13.8rem;
+          height: 8.8rem;
 
           .accessory-img {
             position: relative;
-            top: -40px;
+            top: -4rem;
           }
         }
 
         .img-div-3 {
-          width: 165px;
+          width: 16.5rem;
         }
 
         p {
-          @include fontStyles(15px, 900, 20px, 1.07px);
+          @include fontStyles(1.5rem, 900, 2rem, 0.1rem);
           text-transform: uppercase;
         }
 
         a {
-          margin: 17px 0 0;
+          margin: 1.7rem 0 0;
           display: flex;
           align-items: center;
-          gap: 13.32px;
+          gap: 1.33rem;
           text-decoration: none;
 
           p {
-            @include fontStyles(13px, 500, 18px, 1px);
+            @include fontStyles(1.3rem, 500, 1.8rem, 0.1rem);
             color: $black;
             text-transform: uppercase;
           }
 
           img {
-            width: 9px;
-            height: 14px;
+            width: 0.9rem;
+            height: 1.4rem;
           }
 
           &:hover {
@@ -326,35 +325,35 @@ body {
     // media for section 2
     @media (min-width: 768px) {
       .section-2 {
-        padding: 101px 40px 0 39px;
+        padding: 10.1rem 4rem 0 3.9rem;
         flex-direction: row;
         justify-content: center;
-        gap: 10px;
+        gap: 1rem;
 
         .div {
-          max-width: 350px;
+          max-width: 35rem;
         }
       }
     }
 
     @media (min-width: 1440px) {
       .section-2 {
-        padding: 120px 165px 0 165px;
-        gap: 30px;
+        padding: 12rem 16.5rem 0 16.5rem;
+        gap: 3rem;
       }
     }
 
     // section 3
     .section-3 {
-      padding: 63px 24px 0;
+      padding: 6.3rem 2.4rem 0;
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 2.4rem;
 
       // product 1
       .product-div-1 {
-        border-radius: 8px;
-        padding: 0 24px;
+        border-radius: 0.8rem;
+        padding: 0 2.4rem;
         //flex
         display: flex;
         flex-direction: column;
@@ -365,33 +364,33 @@ body {
         background-image: url(../assets/home/mobile/image-speaker-zx9.png),
           url(../assets/home/desktop/pattern-circles.svg);
         background-repeat: no-repeat, no-repeat;
-        background-size: 172.25px 207px, 558px;
-        background-position: center top 55px, center top -122px;
+        background-size: 17.22rem 20.7rem, 55.8rem;
+        background-position: center top 5.5rem, center top -12.2rem;
 
         h1 {
-          @include fontStyles(36px, 700, 40px, 1.285px);
+          @include fontStyles(3.6rem, 700, 4rem, 0.128rem);
           color: $white;
-          margin: 294px 0 0;
+          margin: 29.4rem 0 0;
           text-transform: uppercase;
         }
 
         p {
-          @include fontStyles(15px, 500, 25px, 0px);
+          @include fontStyles(1.5rem, 500, 2.5rem, 0rem);
           color: $white;
-          margin: 24px 0 0;
-          max-width: 280px;
+          margin: 2.4rem 0 0;
+          max-width: 28rem;
         }
 
         a {
-          margin: 24px 0 55px;
+          margin: 2.4rem 0 5.5rem;
 
           button {
-            @include fontStyles(13px, 700, 18px, 1px);
+            @include fontStyles(1.3rem, 700, 1.8rem, 0.1rem);
             background-color: $black;
             color: $white;
             margin: 0;
-            width: 160px;
-            height: 48px;
+            width: 16rem;
+            height: 4.8rem;
             border: none;
             text-transform: uppercase;
             cursor: pointer;
@@ -406,36 +405,36 @@ body {
       // media for product 1
       @media (min-width: 768px) {
         .product-div-1 {
-          padding: 0 169px 0 171px;
+          padding: 0 16.9rem 0 17.1rem;
           //background
           background-image: url(../assets/home/tablet/image-speaker-zx9.png),
             url(../assets/home/desktop/pattern-circles.svg);
-          background-size: 197px 237px, 944px;
-          background-position: center top 52px, center top -255px;
+          background-size: 19.7rem 23.7rem, 94.4rem;
+          background-position: center top 5.2rem, center top -25.5rem;
 
           h1 {
-            @include fontStyles(56px, 700, 58px, 2px);
-            margin: 353px 0 0;
+            @include fontStyles(5.6rem, 700, 5.8rem, 0.2rem);
+            margin: 35.3rem 0 0;
           }
 
           p {
-            max-width: 349px;
+            max-width: 34.9rem;
           }
 
           a {
-            margin: 40px 0 124px;
+            margin: 4rem 0 12.4rem;
           }
         }
       }
 
       @media (min-width: 1440px) {
         .product-div-1 {
-          padding: 133px 95px 124px 666px;
+          padding: 13.3rem 9.5rem 12.4rem 66.6rem;
           //background
           background-image: url(../assets/home/desktop/image-speaker-zx9.png),
             url(../assets/home/desktop/pattern-circles.svg);
-          background-size: 410.23px 493px, 944px;
-          background-position: left 117.49px bottom -13px, left -150px top -40px;
+          background-size: 41.02rem 49.3rem, 94.4rem;
+          background-position: left 11.74rem bottom -1.3rem, left -15rem top -4rem;
           text-align: left;
           display: block;
 
@@ -444,15 +443,15 @@ body {
           }
 
           p {
-            margin: 24px 0 40px;
+            margin: 2.4rem 0 4rem;
           }
         }
       }
 
       // product 2
       .product-div-2 {
-        border-radius: 8px;
-        padding: 101px 0 101px 24px;
+        border-radius: 0.8rem;
+        padding: 10.1rem 0 10.1rem 2.4rem;
         // flex
         display: flex;
         flex-direction: column;
@@ -465,20 +464,20 @@ body {
         background-size: cover;
 
         h2 {
-          @include fontStyles(28px, 700, 38px, 2px);
+          @include fontStyles(2.8rem, 700, 3.8rem, 0.2rem);
           color: $black;
         }
 
         a {
-          margin: 32px 0 0;
+          margin: 3.2rem 0 0;
 
           button {
             background-color: inherit;
-            width: 160px;
-            height: 48px;
-            border: 2px solid $black;
+            width: 16rem;
+            height: 4.8rem;
+            border: 0.2rem solid $black;
             text-transform: uppercase;
-            @include fontStyles(13px, 700, 18px, 1px);
+            @include fontStyles(1.3rem, 700, 1.8rem, 0.1rem);
             cursor: pointer;
             color: $black;
           }
@@ -493,7 +492,7 @@ body {
       // media for product 2
       @media (min-width: 768px) {
         .product-div-2 {
-          padding: 101px 0 101px 62px;
+          padding: 10.1rem 0 10.1rem 6.2rem;
           background-image: url(../assets/home/tablet/image-speaker-zx7.jpg);
           background-repeat: no-repeat;
           background-size: cover;
@@ -502,7 +501,7 @@ body {
 
       @media (min-width: 1440px) {
         .product-div-2 {
-          padding: 101px 0 101px 95px;
+          padding: 10.1rem 0 10.1rem 9.5rem;
           background-image: url(../assets/home/desktop/image-speaker-zx7.jpg);
           background-repeat: no-repeat;
           background-size: cover;
@@ -514,7 +513,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 24px;
+        gap: 2.4rem;
 
         .top-part {
           background-color: $black;
@@ -523,34 +522,34 @@ body {
           background-size: cover;
           background-position: center;
           width: 100%;
-          height: 200px;
+          height: 20rem;
         }
 
         .bottom-part {
           background-color: $gray_white;
-          border-radius: 8px;
-          padding: 41px 0 41px 24px;
+          border-radius: 0.8rem;
+          padding: 4.1rem 0 4.1rem 2.4rem;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           width: 100%;
 
           h2 {
-            @include fontStyles(28px, 700, 38px, 2px);
+            @include fontStyles(2.8rem, 700, 3.8rem, 0.2rem);
             color: $black;
             text-transform: uppercase;
           }
 
           a {
-            margin: 32px 0 0;
+            margin: 3.2rem 0 0;
 
             button {
               background-color: inherit;
-              width: 160px;
-              height: 48px;
-              border: 2px solid $black;
+              width: 16rem;
+              height: 4.8rem;
+              border: 0.2rem solid $black;
               text-transform: uppercase;
-              @include fontStyles(13px, 700, 18px, 1px);
+              @include fontStyles(1.3rem, 700, 1.8rem, 0.1rem);
               cursor: pointer;
               color: $black;
 
@@ -567,12 +566,12 @@ body {
       @media (min-width: 768px) {
         .product-div-3 {
           flex-direction: row;
-          gap: 11px;
+          gap: 1.1rem;
 
           .top-part {
             width: 100%;
-            height: 320px;
-            border-radius: 8px;
+            height: 32rem;
+            border-radius: 0.8rem;
             overflow: hidden;
             // background
             background-image: url(../assets/home/tablet/image-earphones-yx1.jpg);
@@ -580,14 +579,14 @@ body {
           }
 
           .bottom-part {
-            padding: 101px 53px 101px 41px;
+            padding: 10.1rem 5.3rem 10.1rem 4.1rem;
           }
         }
       }
 
       @media (min-width: 1440px) {
         .product-div-3 {
-          gap: 30px;
+          gap: 3rem;
 
           .top-part {
             //background
@@ -596,7 +595,7 @@ body {
           }
 
           .bottom-part {
-            padding-inline: 95px 200px;
+            padding-inline: 9.5rem 20rem;
           }
         }
       }
@@ -605,21 +604,21 @@ body {
     // media for section 3
     @media (min-width: 768px) {
       .section-3 {
-        padding: 96px 39px 0 40px;
-        gap: 32px;
+        padding: 9.6rem 3.9rem 0 4rem;
+        gap: 3.2rem;
       }
     }
 
     @media (min-width: 1440px) {
       .section-3 {
-        padding: 168px 165px 0 165px;
-        gap: 48px;
+        padding: 16.8rem 16.5rem 0 16.5rem;
+        gap: 4.8rem;
       }
     }
 
     // section 4
     .section-4 {
-      padding: 120px 24px 0;
+      padding: 12rem 2.4rem 0;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -628,14 +627,14 @@ body {
       picture {
         img {
           max-width: 100%;
-          border-radius: 8px;
+          border-radius: 0.8rem;
         }
       }
 
       .text-content {
         h2 {
-          @include fontStyles(28px, 700, 38px, 1px);
-          margin: 40px 0 0;
+          @include fontStyles(2.8rem, 700, 3.8rem, 0.1rem);
+          margin: 4rem 0 0;
           text-transform: uppercase;
 
           span {
@@ -644,9 +643,9 @@ body {
         }
 
         p {
-          @include fontStyles(15px, 500, 25px 0px);
-          max-width: 573px;
-          margin: 32px 0 0;
+          @include fontStyles(1.5rem, 500, 2.5rem, 0rem);
+          max-width: 57.3rem;
+          margin: 3.2rem 0 0;
         }
       }
     }
@@ -654,13 +653,13 @@ body {
     // media for section 4
     @media (min-width: 768px) {
       .section-4 {
-        padding: 96px 39px 0;
+        padding: 9.6rem 3.9rem 0;
 
         .text-content {
           h2 {
-            @include fontStyles(40px, 700, 44px, 1.428px);
-            max-width: 573px;
-            margin: 63px 0 0;
+            @include fontStyles(4rem, 700, 4.4rem, 0.142rem);
+            max-width: 57.3rem;
+            margin: 6.3rem 0 0;
           }
         }
       }
@@ -668,18 +667,18 @@ body {
 
     @media (min-width: 1440px) {
       .section-4 {
-        padding: 200px 165px 0;
+        padding: 20rem 16.5rem 0;
         flex-direction: row-reverse;
-        gap: 125px;
+        gap: 12.5rem;
         text-align: left;
 
         .text-content {
           h2 {
-            max-width: 445px;
+            max-width: 44.5rem;
           }
 
           p {
-            max-width: 445px;
+            max-width: 44.5rem;
           }
         }
       }
@@ -691,38 +690,38 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 24px;
+  margin: 0 0 2.4rem;
 
   .product-info {
     display: flex;
-    gap: 16px;
+    gap: 1.6rem;
 
     .product-name-and-price {
       display: flex;
       flex-direction: column;
 
       .product-name {
-        @include fontStyles(15px, 700, 25px, 0px);
+        @include fontStyles(1.5rem, 700, 2.5rem, 0rem);
       }
 
       .product-price {
-        @include fontStyles(14px, 500, 25px, 0px);
+        @include fontStyles(1.4rem, 500, 2.5rem, 0rem);
       }
     }
   }
 
   .mini-increase-decrease {
-    width: 96px;
-    height: 32px;
-    padding: 0 11.5px;
+    width: 9.6rem;
+    height: 3.2rem;
+    padding: 0 1.15rem;
     background-color: $gray_white;
-    gap: 12px;
+    gap: 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     button {
-      @include fontStyles(13px, 700, 18px, 1px);
+      @include fontStyles(1.3rem, 700, 1.8rem, 0.1rem);
       border: none;
       cursor: pointer;
     }
@@ -733,7 +732,7 @@ body {
     }
 
     p {
-      @include fontStyles(13px, 700, 18px, 1px);
+      @include fontStyles(1.3rem, 700, 1.8rem, 0.1rem);
     }
   }
 }
@@ -754,27 +753,26 @@ body {
 
 .products {
   position: absolute;
-  top: 122.4px;
-  right: 24px;
-  left: 24px;
-  padding: 31px 28px;
+  top: 12.24rem;
+  right: 2.4rem;
+  left: 2.4rem;
+  padding: 3.1rem 2.8rem;
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   background-color: $white;
-  // width: 377px;
 
   .number-of-products {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 31px;
+    margin: 0 0 3.1rem;
 
     h2 {
-      @include fontStyles(18px, 700, 25px, 1.285px);
+      @include fontStyles(1.8rem, 700, 2.5rem, 0.128rem);
     }
 
     p {
-      @include fontStyles(15px, 500, 25px, 0px);
+      @include fontStyles(1.5rem, 500, 2.5rem, 0rem);
       text-decoration: underline;
       cursor: pointer;
     }
@@ -788,25 +786,25 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 32px 0 0;
+    margin: 3.2rem 0 0;
 
     p {
-      @include fontStyles(15px, 500, 25px, 0px);
+      @include fontStyles(1.5rem, 500, 2.5rem, 0rem);
       text-transform: uppercase;
     }
 
     .price {
-      font-size: 18px;
+      font-size: 1.8rem;
       font-weight: 700;
     }
   }
 
   a {
     button {
-      @include fontStyles(13px, 700, 18px, 1px);
-      margin: 24px 0 0;
+      @include fontStyles(1.3rem, 700, 1.8rem, 0.1rem);
+      margin: 2.4rem 0 0;
       width: 100%;
-      height: 48px;
+      height: 4.8rem;
       border: none;
       cursor: pointer;
       background-color: $dark_brown;
@@ -823,22 +821,22 @@ body {
 // media for that
 @media (min-width: 425px) {
   .products {
-    width: 377px;
+    width: 37.7rem;
     right: 0;
-    left: calc(100% - 377px - 24px);
+    left: calc(100% - 37.7rem - 2.4rem);
   }
 }
 
 @media (min-width: 768px) {
   .products {
-    top: 127.4px;
-    left: calc(100% - 377px - 40px);
+    top: 12.74rem;
+    left: calc(100% - 37.7rem - 4rem);
   }
 }
 
 @media (min-width: 1440px) {
   .products {
-    top: 126.4px;
-    left: calc(100% - 377px - 165px);
+    top: 12.64rem;
+    left: calc(100% - 37.7rem - 16.5rem);
   }
 }
