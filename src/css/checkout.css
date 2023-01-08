@@ -91,20 +91,22 @@ h6 {
   isolation: isolate;
 }
 
-html {
+:root {
   font-size: 62.5%;
 }
 
 body {
   font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
 }
 
-html {
+:root {
   font-size: 62.5%;
 }
 
 body {
   font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
 }
 
 footer {
