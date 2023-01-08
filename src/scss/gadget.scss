@@ -1,13 +1,5 @@
 @import "./base/reset";
-
-//colors:
-$dark_brown: #d87d4a;
-$light_brown: #fbaf85;
-$black: #000;
-$almost_black: #101010;
-$white: #fff;
-$medium_white: #fafafa;
-$gray_white: #f1f1f1;
+@import "./abstracts/colors";
 
 body {
   font-family: "Manrope", sans-serif;
