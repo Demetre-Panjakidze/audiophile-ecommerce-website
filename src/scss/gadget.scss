@@ -1,10 +1,9 @@
 @import "./base/reset";
+@import "./base/typography";
 @import "./abstracts/colors";
+@import "./abstracts/mixins";
 
 body {
-  font-family: "Manrope", sans-serif;
-
-  // header
   header {
     .header-div {
       background-color: $almost_black;
