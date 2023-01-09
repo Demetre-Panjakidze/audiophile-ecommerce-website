@@ -638,6 +638,23 @@ body main .section-1 .product-content .pricing .amount .increase-decrease p {
   line-height: 1.8rem;
   letter-spacing: 0.1rem;
 }
+body main .section-1 .product-content .pricing .amount button {
+  width: 16rem;
+  height: 4.8rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #d87d4a;
+  color: #fff;
+}
+body main .section-1 .product-content .pricing .amount button:hover {
+  background-color: #fbaf85;
+}
 @media (min-width: 768px) {
   body main .goBack {
     margin: 3.3rem 0 0 4rem;
@@ -1001,7 +1018,8 @@ body main .section-6 .text-content p {
     gap: 12.5rem;
     text-align: left;
   }
-  body main .section-6 .text-content h2, body main .section-6 .text-content p {
+  body main .section-6 .text-content h2,
+  body main .section-6 .text-content p {
     max-width: 44.5rem;
   }
 }
