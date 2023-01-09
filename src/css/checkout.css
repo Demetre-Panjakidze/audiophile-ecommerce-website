@@ -380,6 +380,51 @@ body {
     left: calc(100% - 37.7rem - 16.5rem);
   }
 }
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+}
+
+.btn {
+  width: 16rem;
+  height: 4.8rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn-primary {
+  background-color: #d87d4a;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #fbaf85;
+}
+.btn-secondary {
+  background-color: #000;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #4c4c4c;
+}
+.btn-third {
+  background-color: inherit;
+  color: #000;
+  border: 0.2rem solid #000;
+}
+.btn-third:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 body header .header-div {
   background-color: #101010;
   border-bottom: 0.1rem solid #fff;

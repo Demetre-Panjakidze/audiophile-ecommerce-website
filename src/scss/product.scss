@@ -249,22 +249,6 @@ body {
                 @include fontStyles(1.3rem, 700, 1.8rem, 0.1rem);
               }
             }
-
-            button {
-              width: 16rem;
-              height: 4.8rem;
-              background-color: $dark_brown;
-              color: $white;
-              border: none;
-              cursor: pointer;
-              text-transform: uppercase;
-              @include fontStyles(1.3rem, 700, 1.8rem, 0.1rem);
-
-              &:hover,
-              &:active {
-                background-color: $light_brown;
-              }
-            }
           }
         }
       }
@@ -506,18 +490,6 @@ body {
 
               button {
                 margin: 2.8rem 0 0;
-                width: 16rem;
-                height: 4.8rem;
-                background-color: $dark_brown;
-                color: $white;
-                @include fontStyles(1.3rem, 700, 1.8rem, 0.1rem);
-                border: none;
-                cursor: pointer;
-
-                &:hover,
-                &:active {
-                  background-color: $light_brown;
-                }
               }
             }
           }

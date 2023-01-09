@@ -380,6 +380,51 @@ body {
     left: calc(100% - 37.7rem - 16.5rem);
   }
 }
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+}
+
+.btn {
+  width: 16rem;
+  height: 4.8rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn-primary {
+  background-color: #d87d4a;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #fbaf85;
+}
+.btn-secondary {
+  background-color: #000;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #4c4c4c;
+}
+.btn-third {
+  background-color: inherit;
+  color: #000;
+  border: 0.2rem solid #000;
+}
+.btn-third:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 body header .header-div {
   background-color: #101010;
   border-bottom: 0.1rem solid #fff;
@@ -548,20 +593,7 @@ body main .section-1 p {
   text-align: center;
 }
 body main .section-1 a button {
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.8rem;
-  letter-spacing: 0.1rem;
   margin: 2.8rem 0 0;
-  width: 16rem;
-  height: 4.8rem;
-  background-color: #d87d4a;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-body main .section-1 a button:hover, body main .section-1 a button:active {
-  background-color: #fbaf85;
 }
 @media (min-width: 768px) {
   body main .section-1 {
@@ -714,21 +746,7 @@ body main .section-3 .product-div-1 a {
   margin: 2.4rem 0 5.5rem;
 }
 body main .section-3 .product-div-1 a button {
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.8rem;
-  letter-spacing: 0.1rem;
-  background-color: #000;
-  color: #fff;
   margin: 0;
-  width: 16rem;
-  height: 4.8rem;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-body main .section-3 .product-div-1 a button:hover {
-  background-color: #4c4c4c;
 }
 @media (min-width: 768px) {
   body main .section-3 .product-div-1 {
@@ -789,23 +807,6 @@ body main .section-3 .product-div-2 h2 {
 body main .section-3 .product-div-2 a {
   margin: 3.2rem 0 0;
 }
-body main .section-3 .product-div-2 a button {
-  background-color: inherit;
-  width: 16rem;
-  height: 4.8rem;
-  border: 0.2rem solid #000;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.8rem;
-  letter-spacing: 0.1rem;
-  cursor: pointer;
-  color: #000;
-}
-body main .section-3 .product-div-2 a button:hover {
-  background-color: #000;
-  color: #fff;
-}
 @media (min-width: 768px) {
   body main .section-3 .product-div-2 {
     padding: 10.1rem 0 10.1rem 6.2rem;
@@ -856,23 +857,6 @@ body main .section-3 .product-div-3 .bottom-part h2 {
 }
 body main .section-3 .product-div-3 .bottom-part a {
   margin: 3.2rem 0 0;
-}
-body main .section-3 .product-div-3 .bottom-part a button {
-  background-color: inherit;
-  width: 16rem;
-  height: 4.8rem;
-  border: 0.2rem solid #000;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.8rem;
-  letter-spacing: 0.1rem;
-  cursor: pointer;
-  color: #000;
-}
-body main .section-3 .product-div-3 .bottom-part a button:hover {
-  background-color: #000;
-  color: #fff;
 }
 @media (min-width: 768px) {
   body main .section-3 .product-div-3 {

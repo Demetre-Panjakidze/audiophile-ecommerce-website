@@ -380,6 +380,51 @@ body {
     left: calc(100% - 37.7rem - 16.5rem);
   }
 }
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
+}
+
+.btn {
+  width: 16rem;
+  height: 4.8rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn-primary {
+  background-color: #d87d4a;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #fbaf85;
+}
+.btn-secondary {
+  background-color: #000;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #4c4c4c;
+}
+.btn-third {
+  background-color: inherit;
+  color: #000;
+  border: 0.2rem solid #000;
+}
+.btn-third:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 body header .header-div {
   background-color: #101010;
   border-bottom: 0.1rem solid #fff;
@@ -593,22 +638,6 @@ body main .section-1 .product-content .pricing .amount .increase-decrease p {
   line-height: 1.8rem;
   letter-spacing: 0.1rem;
 }
-body main .section-1 .product-content .pricing .amount button {
-  width: 16rem;
-  height: 4.8rem;
-  background-color: #d87d4a;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.8rem;
-  letter-spacing: 0.1rem;
-}
-body main .section-1 .product-content .pricing .amount button:hover, body main .section-1 .product-content .pricing .amount button:active {
-  background-color: #fbaf85;
-}
 @media (min-width: 768px) {
   body main .goBack {
     margin: 3.3rem 0 0 4rem;
@@ -812,19 +841,6 @@ body main .section-4 .sugestions .sugestion .sugestion-content a {
 }
 body main .section-4 .sugestions .sugestion .sugestion-content a button {
   margin: 2.8rem 0 0;
-  width: 16rem;
-  height: 4.8rem;
-  background-color: #d87d4a;
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 700;
-  line-height: 1.8rem;
-  letter-spacing: 0.1rem;
-  border: none;
-  cursor: pointer;
-}
-body main .section-4 .sugestions .sugestion .sugestion-content a button:hover, body main .section-4 .sugestions .sugestion .sugestion-content a button:active {
-  background-color: #fbaf85;
 }
 @media (min-width: 768px) {
   body main .section-4 {
