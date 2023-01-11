@@ -124,12 +124,3 @@ function checkInputFieldsMini() {
 
 checkInputFields();
 form.addEventListener("input", checkInputFields);
-submit.addEventListener("click", () => {
-  console.log("hi");
-});
-
-document.addEventListener("click", function (event) {
-  if (submit.contains(event.target)) {
-    console.log("hi");
-  }
-});

@@ -98,8 +98,3 @@ submiting.addEventListener("click", () => {
     })
   });
 });
-
-const submitingDiv = document.getElementsByClassName("submitDiv")[0];
-submitingDiv.addEventListener("click", () => {
-  console.log("hi");
-})
