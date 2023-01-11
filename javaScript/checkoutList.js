@@ -30,7 +30,7 @@ if (localStorage.getItem("products")) {
 <div class="product product-${storageItems[i].productName}">
 <div class="product-info">
   <div class="product-img">
-  <img height="64px" width="64px" src="/src/assets/cart/${getPhotoUrl(
+  <img height="64px" width="64px" src="/assets/cart/${getPhotoUrl(
     storageItems[i].productName
   )}"  >
   </div>
@@ -54,7 +54,7 @@ if (localStorage.getItem("products")) {
   <div class="product product-${storageItems[0].productName}">
   <div class="product-info">
     <div class="product-img">
-    <img height="64px" width="64px" src="/src/assets/cart/${getPhotoUrl(
+    <img height="64px" width="64px" src="/assets/cart/${getPhotoUrl(
       storageItems[0].productName
     )}"  >
     </div>

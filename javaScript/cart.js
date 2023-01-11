@@ -144,7 +144,7 @@ function renderProducts() {
 <div class="product product-${products[i].productName}">
   <div class="product-info">
     <div class="product-img">
-    <img height="64px" width="64px" src="/src/assets/cart/${getPhotoUrl(
+    <img height="64px" width="64px" src="/assets/cart/${getPhotoUrl(
       products[i].productName
     )}"  >
     </div>
